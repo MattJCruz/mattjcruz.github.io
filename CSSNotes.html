@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <title>CSS Notes</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Notes.css">
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>CSS</h1>
+            <h3>Here we have notes on CSS Usage.</h3>
+            And some proposed sections: The Basics, Fonts, The Box Model...
+        </div>
+        <br>
+        <div class="databox">
+            <h2>The Basics</h2>
+            <ul>
+                <li>
+                    To include CSS in your HTML document via a stylesheet, use a &lt;link&gt; element with an href attribute pointing to your
+                    stylesheet.<br>
+                    For example:
+                    <ul>
+                        <li>
+                            &lt;link rel="stylesheet" href="filename or URL"&gt;
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    A CSS selector and the properties defined between its brackets is called, altogether, a <em>rule</em>.
+                </li>
+                <br>
+                <li>
+                    Elements nested within another will inherit applicable rules from their parent element.
+                </li>
+                <br>
+                <li>
+                    To override an inherited rule, create a new rule for the element(s) to be overridden.
+                    <ul>
+                        <li>
+                            The most specific rule always wins in this case.
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    Style a specific element by creating a class selector. State the element type followed by a dot, followed by the class name. Then you can define rules to your heart's content!<br> For example:<br>
+                    <ul>
+                        <li class="yellow">
+                            <code>
+                                li.yellow{background-color:yellow;}
+                            </code>
+                        </li>
+                    </ul>
+                    And if you'd like to style ALL elements with the <code>yellow</code> class, simply omit the element name(s). Your syntax will then be .class
+                    <ul>
+                        <li class="yellow">
+                            <code>
+                                .yellow{background-color:yellow;}
+                            </code>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    Elements can belong to more than one class as well. List all the classes between quotes followed by spaces.
+                    <br> For example:<br>
+                    <ul>
+                        <li>
+                            <code>
+                                "yellow centered_text important"
+                            </code>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    These rules range in specificity. Element and class are less specific than element.class.
+                    <ul>
+                        <li>
+                            The most specific selector wins in terms of rule conflict, such as when rules format the same property differently.
+                        </li>
+                        <li class="yellow orange">
+                            If even this fails, the lower the rule is on the stylesheet, the more superiority it has. This list element belongs to the <code>yellow</code> and <code>orange</code> classes, which both only designate background color. The <code>orange</code> rule is lower on the page than the <code>yellow</code> rule.
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    You can even override stylesheets! The lower they're <code>&lt;link&gt;</code>'ed in the head element, the more precedence they have over previous sheet(s).
+                </li>
+                <br>
+                <li>
+                    Use "/* */" to comment in CSS.<br>
+                    For example:
+                    <ul>
+                        <li>
+                            <code>/* This is a comment. */</code>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+            </ul>
+        </div>
+        <br>
+        <div class="databox">
+            <h2>Fonts</h2>
+            <ul>
+                <li>
+                    A font family refers to either:
+                    <ul>
+                        <li>
+                            A group of fonts that share design characteristics, i.e. sans serif, serif, monospace, fantasy...
+                        </li>
+                        <li>
+                            A set of font variations based off one parent font, i.e. gothic, gothic bold, gothic italic...
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    To include a custom font, either from the web or from your own server, use the font face rule.<br>
+                    For example:
+                    <ul>
+                        <li>
+                            <code>@font-face {<br>
+                                font-family: "Name of your Font";<br>
+                                src: url("relative or absolute url for font of one file type"),<br>
+                                src: url("another url for font of another file type for compatability");
+                                }</code>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    Some important font properties to know:
+                    <ul>
+                        <li><code>font-size: 14px, 15%, 1.5em, medium;</code> </li>
+                        <li><code>line-height: 13px, 95%, 1.9em;</code></li>
+                        <li><code>font-weight: bold, normal;</code></li>
+                        <li><code>font-style: italic, oblique;</code></li>
+                        <li><code>text-decoration: underline, overline, line-through</code></li>
+                    </ul>
+                    <code>em</code> and <code>%</code> are proportional modifiers.
+                </li>
+                <br>
+            </ul>
+        </div>
+        <br>
+        <div class="databox">
+            <h2>The Box Model</h2>
+            <ul>
+                <li>
+                    CSS treats HTML body elements like "layered" boxes. This is referred to as the Box Model.<br><br>
+                    <img src="boxmodel.png">
+                    <ul>
+                        <li>
+                            The innermost box is the content area.
+                        </li>
+                        <li>
+                            Next is the padding area.
+                        </li>
+                        <li>
+                            After which comes the border.
+                        </li>
+                        <li>
+                            It's all topped off with a margin.
+                        </li>
+                    </ul>
+                    The padding box provides space between the content and the border.<br>The margin box provides space between other elements.<br>
+                    Adjust padding and margin sizes with:
+                    <ul>
+                        <li>
+                            <code>padding: 25px;</code>
+                        </li>
+                        <li>
+                            <code>padding-left: 80%;</code>
+                        </li>
+                        <li>
+                            <code>margin: 30%;</code>
+                        </li>
+                        <li>
+                            <code>margin-right: 50px;</code>
+                        </li>
+                    </ul>
+                    Adjust borders with:
+                    <ul>
+                        <li>
+                            <code>border: solid 4px #c45525; </code>
+                        </li>
+                        <li>
+                            <code>border-style: solid, groove, dotted;</code>
+                        </li>
+                        <li>
+                            <code>border-width:thin, 9px;</code>
+                        </li>
+                        <li>
+                            <code>border-color: red, rgb(26%, 12%, 75%), #ff0011;</code>
+                        </li>
+                    </ul>
+                    Add a position between "border" and property to edit specific borders.<br>
+                    For rounded borders:<br>
+                    <ul>
+                        <li>
+                            <code>border-top-left-radius: 3em;</code>
+                        </li>
+                        <li>
+                            <code>border-bottom-right-radius: 0px;</code>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    Add a decorative image to an element using the background image property.<br>
+                    For example:
+                    <ul>
+                        <li>
+                            <code> background-image: url(url_goes_here.jpg);</code>
+                        </li>
+                    </ul>
+                    Use this only when an image does not add function to your page, and is used only for decorative purposes.<br>
+                    Images used this way, by default, are generated in the top left of the element and repeat in a tiled manner.<br>
+                    Address the repeating and positioning of your background image with these properties:
+                    <ul>
+                        <li>
+                            <code>background-repeat: no-repeat, repeat-x, inherit;</code>
+                        </li>
+                        <li>
+                            <code>background-position: left, bottom, center, 12px, 43%;</code>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <br>
+    </body></html>
