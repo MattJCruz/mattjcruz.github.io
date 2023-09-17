@@ -11,7 +11,6 @@
         <div id="header">
             <h1>CSS</h1>
             <h3>Here we have notes on CSS Usage.</h3>
-            And some proposed sections: The Basics, Fonts, The Box Model...
         </div>
         <br>
         <div class="databox">
@@ -77,7 +76,7 @@
                 </li>
                 <br>
                 <li>
-                    These rules range in specificity. Element and class are less specific than element.class.
+                    These rules range in specificity. Element and class themselves equally are less specific than "element.class".
                     <ul>
                         <li>
                             The most specific selector wins in terms of rule conflict, such as when rules format the same property differently.
@@ -88,6 +87,14 @@
                     </ul>
                 </li>
                 <br>
+                <li>
+                ID's can be selected by using a # symbol instead of a dot. Remember to give any single element <em>one unique ID</em>.
+                    <ul>
+                    <li>
+                        <code>#id-name</code>
+                        </li>
+                    </ul>
+                </li>
                 <li>
                     You can even override stylesheets! The lower they're <code>&lt;link&gt;</code>'ed in the head element, the more precedence they have over previous sheet(s).
                 </li>

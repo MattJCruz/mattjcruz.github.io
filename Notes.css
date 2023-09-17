@@ -1,12 +1,11 @@
 @font-face {
     font-family: "Playfair Display";
-    src: url('Fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    src: url('FOnts/PlayfairDisplay-Regular.ttf') format('truetype');
 }
 
 body {
     background-color: #f79079;
     font-family: "Playfair Display";
-
 }
 
 h1,
@@ -21,8 +20,6 @@ div {
 h1,
 h2 {
     text-align: center;
-
-
     background-color: #CEE6F3;
 }
 
@@ -39,7 +36,6 @@ div {
     border-radius: 20px;
     background-color: #BA704F;
     padding: 20px;
-
 }
 
 blockquote p {
@@ -56,11 +52,12 @@ ul li ul {
     margin-right: 15%;
     margin-right: 15%;
     */
-
 }
 
 em {
     font-family: sans-serif;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 .yellow {
