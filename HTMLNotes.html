@@ -13,6 +13,42 @@
             <h3>Here I've listed some important HTML facts to remember, divided into neat sections.</h3>
         </div>
         <br>
+        <div>
+            Loose thoughts to add:
+            <ul>
+                <li>
+                    inline vs block vs void/empty elements, pg. 137
+                </li>
+                <li>
+                    delineate tags and elements
+                </li>
+                <li>
+                    List of important elements (pg. 154), i.e. headings, code, article, quote &amp; blockquote, linebreak (pg. 136), ordered vs unordered lists,
+                </li>
+                <li>
+                    Nesting elements and their effect on inheritance in CSS
+                </li>
+                <li>
+                    A list of escape characters and how/when to use them (pg. 152)
+                </li>
+                <li>
+                    Remark on structured and meaningful HTML pages; elaborate in The Basics
+                </li>
+                <li>
+                    Page 119
+                </li>
+                <li>
+                    relative vs absolute URLs
+                </li>
+                <li>
+                    Add bullet describing title(pg. 187) and target (pg. 196) attributes to Linking 
+                </li>
+                <li>
+                    id attribute elaboration (pg. 190)
+                </li>
+            </ul>
+        </div>
+        <br>
         <div class="databox">
             <h2>The Basics</h2>
             <ul>
@@ -45,6 +81,12 @@
                         </li>
                         <li>
                             what language your page is written in with the <code>lang="en"</code> attribute in your html tag.
+                        </li>
+                    </ul>
+                    And tell your user:
+                    <ul>
+                        <li>
+                            what your page is all about with a <code>&lt;title&gt;</code> tag in the <code>&lt;head&gt;</code> element.
                         </li>
                     </ul>
                 </li>
@@ -98,7 +140,7 @@
         <div class="databox">
             <h2>Linking</h2>
             <ul>
-                <li>The href attribute is used to link external items called for when using an element that requires it.
+                <li>The <code>&lt;href&gt;</code> (hypertext reference) attribute is used to link external items called for when using an element that requires it.
                     <ul>
                         <li>
                             <code>&lt;img src="Img.png"&gt;</code>
@@ -107,16 +149,19 @@
                 </li>
                 <br>
                 <li>
-                    To link to another html document, i.e. webpage, use the <code><a></a></code> (anchor) element with the <code>href</code> attribute with the destination url.
+                    To link to another html document, i.e. webpage, use the <code>&lt;a&gt;</code> (anchor) element with the <code>href</code> attribute with the destination url.
                     <ul>
                         <li>
                             <code>&lt;a href="otherPage.html&gt;</code>
+                        </li>
+                        <li>
+                            The text between the anchor tags will be highlighted as a link, like the link to the W3C Validator above.
                         </li>
                     </ul>
                 </li>
                 <br>
                 <li>
-                    Use an id to navigate to a certain part of the page with href.
+                    Use an <code>&lt;id&gt;</code> to navigate to a certain part of the page with href.
                     <ul>
                         <li>
                             <code>id="idname"</code>
@@ -130,7 +175,6 @@
                 <li>
                     Use the <code>&lt;nav&gt;</code> element to create a menu bar to help organize your pages.
                 </li>
-                <br>
             </ul>
 
         </div>
@@ -150,6 +194,7 @@
                         </li>
                     </ul>
                 </li>
+                <br>
                 <li>
                     Incorporate alt attributes in all of your photos in case, e.g., your user is using a screen reader or the image fails to load.
                     <ul>
@@ -158,6 +203,7 @@
                         </li>
                     </ul>
                 </li>
+                <br>
                 <li>
                     Style an element with a CSS sheet by giving it a class attribute with a distinct name value in quotes.<br>
                     For example:
@@ -170,8 +216,6 @@
                         </li>
                     </ul>
                 </li>
-                <br>
             </ul>
-            <br>
         </div>
     </body></html>

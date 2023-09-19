@@ -3,6 +3,13 @@
     src: url('FOnts/PlayfairDisplay-Regular.ttf') format('truetype');
 }
 
+#elixirs {
+    border-width: thin;
+    border-style: solid;
+    border-color: #007e7e;
+    width: 200px;
+}
+
 body {
     background-color: #f79079;
     font-family: "Playfair Display";
@@ -73,23 +80,5 @@ code {
     color: goldenrod;
 }
 
-#guar {
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    background-color: #a7cece;
-    line-height: 190%;
-    font-style: italic;
-    color: #ffffff;
-    font-family: Georgia, “Times New Roman”, Times, serif;
-    /*background-image: url(if.png);*/
-    background-repeat: no-repeat;
-    background-position: 97.5%;
-    margin-left: 120px;
-    margin-right: 0px;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 300px;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 70px;
-}
+
+

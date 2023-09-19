@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
     <head>
         <title>CSS Notes</title>
         <meta charset="utf-8">
@@ -13,18 +14,55 @@
             <h3>Here we have notes on CSS Usage.</h3>
         </div>
         <br>
+        <div>
+            Loose thoughts to add:
+            <ul>
+                <li>
+                    rules, selectors, properties delineated
+                </li>
+                <li>
+                    Review images and media (pg. 203)
+                </li>
+                <li>
+                    How styles are applied (pg. 332)
+                </li>
+                <li>
+                    List important properties (pg. 340)
+                </li>
+                <li>
+                    elaborate on fonts (pg. 357)
+                </li>
+                <li>
+                    Web fonts (pg. 363)
+                </li>
+                <li>
+                    Font properties (pg. 368)
+                </li>
+                <li>
+                    A refresher of box model properties (pg. 417)
+                </li>
+                <li>
+                    class vs. id (pg. 432)
+                </li>
+                <li>
+                    Multiple stylesheets via the media attribute (pg. 439)
+                </li>
+            </ul>
+        </div>
+        <br>
         <div class="databox">
             <h2>The Basics</h2>
             <ul>
                 <li>
-                    To include CSS in your HTML document via a stylesheet, use a &lt;link&gt; element with an href attribute pointing to your
+                    To include CSS in your HTML document via a stylesheet, use a <code>&lt;link&gt;</code> element with an href attribute pointing to your
                     stylesheet.<br>
                     For example:
                     <ul>
                         <li>
-                            &lt;link rel="stylesheet" href="filename or URL"&gt;
+                            <code>&lt;link rel="stylesheet" href="filename or URL"&gt;</code>
                         </li>
                     </ul>
+                    You can include CSS directly in your page using the <code>&lt;style&gt;</code> tag. Be mindful of the fact that making changes in the future will be difficult.
                 </li>
                 <br>
                 <li>
@@ -32,7 +70,7 @@
                 </li>
                 <br>
                 <li>
-                    Elements nested within another will inherit applicable rules from their parent element.
+                    Elements nested within others will inherit rules from their parent element.
                 </li>
                 <br>
                 <li>
@@ -88,10 +126,10 @@
                 </li>
                 <br>
                 <li>
-                ID's can be selected by using a # symbol instead of a dot. Remember to give any single element <em>one unique ID</em>.
+                    ID's can be selected by using a # symbol instead of a dot. Remember to give any single element <em>one unique ID</em>.
                     <ul>
-                    <li>
-                        <code>#id-name</code>
+                        <li>
+                            <code>#id-name</code>
                         </li>
                     </ul>
                 </li>
@@ -161,38 +199,41 @@
             <ul>
                 <li>
                     CSS treats HTML body elements like "layered" boxes. This is referred to as the Box Model.<br><br>
-                    <img src="boxmodel.png">
+                    <img src="boxmodel.png"><br>
+                    This box consists of four components:
                     <ul>
                         <li>
-                            The innermost box is the content area.
+                            Content 
                         </li>
                         <li>
-                            Next is the padding area.
+                            Padding
                         </li>
                         <li>
-                            After which comes the border.
+                            Border
                         </li>
                         <li>
-                            It's all topped off with a margin.
+                            Margin
                         </li>
                     </ul>
-                    The padding box provides space between the content and the border.<br>The margin box provides space between other elements.<br>
-                    Adjust padding and margin sizes with:
+                    The content  area contains, of course, the content contained in the element.
                     <ul>
+                        <li>
+                            <code>width: 600px;</code>
+
+                        </li>
+                    </ul>
+                    The padding box provides space between the content and the border.
+                    <ul>
+
                         <li>
                             <code>padding: 25px;</code>
                         </li>
                         <li>
                             <code>padding-left: 80%;</code>
                         </li>
-                        <li>
-                            <code>margin: 30%;</code>
-                        </li>
-                        <li>
-                            <code>margin-right: 50px;</code>
-                        </li>
+
                     </ul>
-                    Adjust borders with:
+                    Borders contain the content and padding within a box whose appearance can be customized.
                     <ul>
                         <li>
                             <code>border: solid 4px #c45525; </code>
@@ -207,6 +248,15 @@
                             <code>border-color: red, rgb(26%, 12%, 75%), #ff0011;</code>
                         </li>
                     </ul>
+                    The margin box provides space between the border and other elements.<br>
+                    Adjust padding and margin sizes with:
+                    <ul>
+                        <li> <code>margin: 30%;</code>
+                        </li>
+                        <li>
+                            <code>margin-right: 50px;</code>
+                        </li>
+                    </ul>
                     Add a position between "border" and property to edit specific borders.<br>
                     For rounded borders:<br>
                     <ul>
@@ -217,6 +267,8 @@
                             <code>border-bottom-right-radius: 0px;</code>
                         </li>
                     </ul>
+                    The dimensions of an element are the sums of the widths and lengths of their boxes, and thus their components thereof.<br>
+                    It's also recommended not to set the height of your element, lest its contents spill over into other elements under unforeseen browser circumstances.<br><br>IT's 269 pixels wide.
                 </li>
                 <br>
                 <li>
@@ -242,4 +294,6 @@
             </ul>
         </div>
         <br>
-    </body></html>
+    </body>
+
+</html>
