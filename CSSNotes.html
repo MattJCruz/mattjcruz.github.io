@@ -9,8 +9,9 @@
     </head>
 
     <body>
+        <h1>CSS</h1>
         <div id="header">
-            <h1>CSS</h1>
+            
             <h3>Here we have notes on CSS Usage.</h3>
         </div>
         <br>
@@ -47,6 +48,9 @@
                 <li>
                     Multiple stylesheets via the media attribute (pg. 439)
                 </li>
+                <li>
+                    Box Model Modifications, contracted (pg. 482)
+                </li>
             </ul>
         </div>
         <br>
@@ -80,6 +84,20 @@
                             The most specific rule always wins in this case.
                         </li>
                     </ul>
+                </li>
+                <br>
+                <li>
+                    Use a descendant selector to change properties of certain elements within other elements that would otherwise inherit its parent's rules.
+                    <ul>
+                        <li>
+                            <code>div h2 {color:black;}</code>
+                        </li>
+                        This selects a heading within a div element to apply style to. Make it more specific with a <code>class</code> or <code>id</code> in case theres a chance another dive with an h2 in it shouldnt be black.
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    Use a <code>&lt;span&gt;</code> element to mark inline text for styling with CSS.
                 </li>
                 <br>
                 <li>
@@ -151,7 +169,7 @@
         </div>
         <br>
         <div class="databox">
-            <h2>Fonts</h2>
+            <h2>Text & Fonts</h2>
             <ul>
                 <li>
                     A font family refers to either:
@@ -183,10 +201,12 @@
                     Some important font properties to know:
                     <ul>
                         <li><code>font-size: 14px, 15%, 1.5em, medium;</code> </li>
-                        <li><code>line-height: 13px, 95%, 1.9em;</code></li>
                         <li><code>font-weight: bold, normal;</code></li>
                         <li><code>font-style: italic, oblique;</code></li>
                         <li><code>text-decoration: underline, overline, line-through</code></li>
+                        <li><code>text-align: center, start, justified;</code></li>
+                        <li><code>line-height: 13px, 95%, 1.9em;</code></li>
+                        Line height can be set proportionally according to its own default size by using just a number as the property value.
                     </ul>
                     <code>em</code> and <code>%</code> are proportional modifiers.
                 </li>
@@ -203,7 +223,7 @@
                     This box consists of four components:
                     <ul>
                         <li>
-                            Content 
+                            Content
                         </li>
                         <li>
                             Padding
@@ -215,12 +235,14 @@
                             Margin
                         </li>
                     </ul>
-                    The content  area contains, of course, the content contained in the element.
+                    The content area contains, of course, the content contained in the element.
                     <ul>
                         <li>
                             <code>width: 600px;</code>
 
                         </li>
+                        <li><code>text-align: center;</code></li>
+                        You may remember this from the Text &amp; Fonts section. It's responsible for aligning ALL of the content in the content pane, as opposed to just text.
                     </ul>
                     The padding box provides space between the content and the border.
                     <ul>
@@ -242,7 +264,7 @@
                             <code>border-style: solid, groove, dotted;</code>
                         </li>
                         <li>
-                            <code>border-width:thin, 9px;</code>
+                            <code>border-width: thin, 9px;</code>
                         </li>
                         <li>
                             <code>border-color: red, rgb(26%, 12%, 75%), #ff0011;</code>
@@ -267,8 +289,16 @@
                             <code>border-bottom-right-radius: 0px;</code>
                         </li>
                     </ul>
-                    The dimensions of an element are the sums of the widths and lengths of their boxes, and thus their components thereof.<br>
-                    It's also recommended not to set the height of your element, lest its contents spill over into other elements under unforeseen browser circumstances.<br><br>IT's 269 pixels wide.
+                    To effect changes on the top, right,bottom, and left, in that order, of your box discretely its helpful to use one property to set them rather than multiple separate statements.
+                    <ul>
+                        <li>
+                            <code>padding: top right bottom ;eft; </code>
+                        </li>
+                        <li>
+                            <code>margin: 12px 0px 25px 0px;</code>
+                        </li>
+                    </ul>The dimensions of an element are the sums of the widths and lengths of their boxes, and thus their components thereof.<br>
+                    It's also recommended not to set the height of your element, lest its contents spill over into other elements under unforeseen browser circumstances.
                 </li>
                 <br>
                 <li>
@@ -294,6 +324,27 @@
             </ul>
         </div>
         <br>
+        <div class="databox">
+            <h2>Layout</h2>
+            <ul>
+                <li>
+                    An HTML document displays content according to Flow. Elements of a page are displayed how they're typed up in the document, from top to bottom, end to end.
+                </li>
+                <br>
+                <li>
+                    Flow applies to inline elements as well, following the flow of the text, i.e. left to right, top to bottom. To further understand, treat text as if it were a flexible inline element.
+                </li>
+                <br>
+                <li>
+                    This arrangement of rows, as it were, can be modified to include columns as well using the <code>float</code> property. 
+                    <ul>
+                        <li>
+                            The element being "floated" must have a width property defined.
+                        </li>
+                    </ul>
+                    The element is floated above (quite literally on top of) the proceeding elements to its desired location. Subsequently, the inline elements (remember, text is considered an inline element) are arranged around the floated element.
+                </li>
+            </ul>
+        </div>
     </body>
-
 </html>

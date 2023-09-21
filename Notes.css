@@ -80,5 +80,13 @@ code {
     color: goldenrod;
 }
 
-
+a:link {
+color: green;
+}
+a:visited {
+color: red;
+}
+a:hover {
+color: yellow;
+}
 
