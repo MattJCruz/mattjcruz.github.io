@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url('Fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #f79079;
+    font-family: "Playfair Display";
+}
+
+div.heading {
+    background-color: #CEE6F3;
+    text-align: center;
+    padding: 12px;
+    border: solid 5px #c45525;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1, h3{
+    margin: 0px;
+}
+
+h2 {
+    text-align: center;
+    border: solid 5px #c45525;
+    border-radius: 20px;
+    font-style: oblique;
+    background-color: #CEE6F3;
+}
+
+div.databox {
+    background-color: #BA704F;
+    padding: 20px;
+    border: solid 5px #c45525;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ul li ul {
+    color: #d4ac9d;
+    font-size: 1.1em;
+}
+
+code {
+    font-size: 20px;
+    color: goldenrod;

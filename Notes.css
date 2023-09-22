@@ -81,12 +81,14 @@ code {
 }
 
 a:link {
-color: green;
+    color: green;
 }
 a:visited {
-color: red;
+    color: red;
 }
 a:hover {
-color: yellow;
+    color: yellow;
 }
+
+
 
