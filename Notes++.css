@@ -30,13 +30,35 @@ h2 {
     background-color: #CEE6F3;
 }
 
+code {
+    font-size: 20px;
+    color: goldenrod;
+}
+
 div.databox {
     background-color: #BA704F;
     padding: 20px;
     border: solid 5px #c45525;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     margin-left: 5%;
     margin-right: 5%;
+}
+
+nav{
+    stext-align: center;
+}
+
+ul.nav {
+    border: 1px solid black;
+    padding: 0px;
+    margin: auto;
+    padding: 0;
+    width: max-content;
+    text-align: center;
+}
+
+li.nav {
+    display: inline-block;
 }
 
 ul li ul {
@@ -44,6 +66,6 @@ ul li ul {
     font-size: 1.1em;
 }
 
-code {
-    font-size: 20px;
-    color: goldenrod;
+
+
+
