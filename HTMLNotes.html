@@ -1,13 +1,15 @@
 <!doctype html>
 
 <html lang="en">
+
     <head>
         <title>HTML Notes</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="Notes++.css">
     </head>
+
     <body>
-        <header >
+        <header>
             <h1>HTML</h1>
             <h3>Here I've listed some important HTML facts to remember, divided into neat sections.</h3>
         </header>
@@ -15,7 +17,8 @@
         <nav>
             <ul class="nav">
                 <li class="nav">
-                    <a href="index.html">Home</a></li>
+                    <a href="index.html">Home</a>
+                </li>
                 <li class="nav">
                     <a href="CSSNotes.html">CSS Notes</a>
                 </li>
@@ -50,7 +53,7 @@
                     When you write an HTML document be sure to tell your browser:
                     <ul>
                         <li>
-                            what kind of document it's working with using<code>&lt;!doctype html&gt;</code>  at the very top of the page
+                            what kind of document it's working with using<code>&lt;!doctype html&gt;</code> at the very top of the page
                         </li>
                         <li>
                             what encoding to use for your document with <code>&lt;meta charset="utf-8"&gt;</code> in the <code>&lt;head&gt;</code> element.
@@ -69,7 +72,7 @@
                 <br>
 
                 <li>
-                    Anything you add to the document needs to go in either the<code>&lt;head&gt;</code>  or <code>&lt;body&gt;</code> element, never directly into the &lt;html&gt; element.
+                    Anything you add to the document needs to go in either the<code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> element, never directly into the &lt;html&gt; element.
                     <ul>
                         <li>
                             Always add a &lt;title&gt; element to you &lt;head&gt; element to keep your document up to spec.
@@ -116,15 +119,8 @@
         <div class="databox">
             <h2>Linking</h2>
             <ul>
-                <li>The <code>&lt;href&gt;</code> (hypertext reference) attribute is used to link external items called for when using an element that requires it.
-                    <ul>
-                        <li>
-                            <code>&lt;img src="Img.png"&gt;</code>
-                        </li>
-                    </ul>
-                </li>
-                <br>
                 <li>
+                    The <code>&lt;href&gt;</code> (hypertext reference) attribute is used to link external items called for when using an element that requires it. <br>
                     To link to another html document, i.e. webpage, use the <code>&lt;a&gt;</code> (anchor) element with the <code>href</code> attribute with the destination url.
                     <ul>
                         <li>
@@ -132,6 +128,18 @@
                         </li>
                         <li>
                             The text between the anchor tags will be highlighted as a link, like the link to the W3C Validator above.
+                        </li>
+                        <li>
+                            Use the <code>target="_blank"</code> attribute to open your link in a new tab.
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>&lt;img&gt;</code> elements require a link to the desired image, done with the <code>src</code> attribute.
+                    <ul>
+                        <li>
+                            <code>&lt;img src="Img.png"&gt;</code>
                         </li>
                     </ul>
                 </li>
@@ -143,13 +151,21 @@
                             <code>id="idname"</code>
                         </li>
                         <li>
-                            <code>&lt;a&gt;href=&lt;/a&gt;</code>
+                            <code>&lt;a href="#idname"&gt;</code>Click here to go to the idname section!<code>&lt;/a&gt;</code>
+                        </li>
+                        <li>
+                            Remember: your ID must be unique to the element you're identifying.
                         </li>
                     </ul>
                 </li>
                 <br>
                 <li>
                     Use the <code>&lt;nav&gt;</code> element to create a menu bar to help organize your pages.
+                    <ul>
+                        <li>
+                            Use an unordered list formatted to display as an inline block, rather than a line-broken vertical list, to create a menu bar.
+                        </li>
+                    </ul>
                 </li>
             </ul>
 
@@ -196,10 +212,46 @@
         </div>
         <br>
         <div class="databox">
+            <h2>Interacting With the User</h2>
+            <ul>
+                <li>
+                    Forms are used to collect data from your user via the <code>&lt;form&gt;</code> element
+                    <ul>
+                        <li>
+                            The <code>action</code> attribute specifies the url to which the form should be submitted.
+                            <ul>
+                                <li>
+                                    <code>&lt;form action="/submit-url"&gt;</code>
+                                    
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            The user inputs data with the <code>&lt;input&gt;</code> element.
+                        </li>
+                        <li>
+                            The <code>type</code> attribute is used to set the type of input to text fields, buttons, checkboxes, and file selectors.
+                            <ul>
+                                <li><code>&lt;input type="text"&gt;</code><input type="text"></li>
+                                <li><code>&lt;input type="radio"&gt;</code><input type="radio"></li>
+                                <li><code>&lt;input type="checkbox"&gt;</code><input type="checkbox"></li>
+                            </ul>
+                            Use the <code>&lt;br&gt;</code> element to create line breaks between inputs, since they're <em>inline</em> elements.<br>
+                            Add an <code>id</code> to link it with a label.
+                        </li>
+                        <li>
+                            Label a form with the <code>&lt;label&gt;</code> element. Add a <code>for</code> attribute to link it to its respective input field <code>id</code>. This increases the hit area for checkboxes to include their label, so clicking the label will activate the checkbox.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="databox">
             Loose thoughts to add:
             <ul>
                 <li>
-                    inline vs block vs void/empty elements (pg. 137)
+                    inline vs block vs void/empty elements, define inline formatting as used in the Nav bar and forms. (pg. 137)
                 </li>
                 <li>
                     delineate tags and elements
@@ -223,7 +275,7 @@
                     relative vs absolute URLs
                 </li>
                 <li>
-                    Add bullet describing title(pg. 187) and target (pg. 196) attributes to Linking 
+                    Add bullet describing title(pg. 187) and target (pg. 196) attributes to Linking
                 </li>
                 <li>
                     id attribute elaboration (pg. 190)
@@ -234,4 +286,6 @@
             </ul>
         </div>
         <br>
-    </body></html>
+    </body>
+
+</html>
