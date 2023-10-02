@@ -221,8 +221,9 @@
                             The <code>action</code> attribute specifies the url to which the form should be submitted.
                             <ul>
                                 <li>
-                                    <code>&lt;form action="/submit-url"&gt;</code>
-                                    
+                                    <code>&lt;form action="/submit-url"&gt;</code>Form content <code>&lt;form&gt;</code>
+
+
                                 </li>
                             </ul>
                         </li>
@@ -230,7 +231,7 @@
                             The user inputs data with the <code>&lt;input&gt;</code> element.
                         </li>
                         <li>
-                            The <code>type</code> attribute is used to set the type of input to text fields, buttons, checkboxes, and file selectors.
+                            The <code>type</code> attribute is used to set the type of input to text fields, checkboxes, and file selectors.
                             <ul>
                                 <li><code>&lt;input type="text"&gt;</code><input type="text"></li>
                                 <li><code>&lt;input type="radio"&gt;</code><input type="radio"></li>
@@ -240,7 +241,20 @@
                             Add an <code>id</code> to link it with a label.
                         </li>
                         <li>
-                            Label a form with the <code>&lt;label&gt;</code> element. Add a <code>for</code> attribute to link it to its respective input field <code>id</code>. This increases the hit area for checkboxes to include their label, so clicking the label will activate the checkbox.
+                            Label a form with the <code>&lt;label&gt;</code> element. Add a <code>for</code> attribute to link it to its respective input field <code>id</code>. This increases the hit area for checkboxes to include their label, so clicking the label will activate the checkbox. Your input field can be nested inside the label or added alongside.
+                        </li>
+                        <li>
+                            Use the <code>name</code> attribute to label the input/data entered in the field. Date fields with no name attribute are not sent.
+                        </li>
+                        <li>
+                            Add placeholder text that tells the user what to enter in a text field with the <code>placeholder</code> attribute.
+                        </li>
+                        <li>
+                            Make sure your user fills out required fields with the valueless <code>required</code> attribute.
+                        </li>
+                        <li>
+                            By default, a <code>&lt;button&gt;</code>
+                                           sans attributes in a form will submit your form to the <code>action</code> url and furthermore the database (to be expounded upon later...) We want this behavior to be explicit by setting the <code>type</code> attribute to <code>submit</code>.
                         </li>
                     </ul>
                 </li>
