@@ -241,7 +241,7 @@
                             Add an <code>id</code> to link it with a label.
                         </li>
                         <li>
-                            Label a form with the <code>&lt;label&gt;</code> element. Add a <code>for</code> attribute to link it to its respective input field <code>id</code>. This increases the hit area for checkboxes to include their label, so clicking the label will activate the checkbox. Your input field can be nested inside the label or added alongside.
+                            Label a form with the <code>&lt;label&gt;</code> element. Add a <code>for</code> attribute to link it to its respective input field <code>id</code>. This increases the hit area for checkboxes to include their label, so clicking the label will activate the checkbox. Your input field can be nested inside the label or added alongside. Nesting negates the need for a <code>for</code> attribute.
                         </li>
                         <li>
                             Use the <code>name</code> attribute to label the input/data entered in the field. Date fields with no name attribute are not sent.
@@ -254,7 +254,31 @@
                         </li>
                         <li>
                             By default, a <code>&lt;button&gt;</code>
-                                           sans attributes in a form will submit your form to the <code>action</code> url and furthermore the database (to be expounded upon later...) We want this behavior to be explicit by setting the <code>type</code> attribute to <code>submit</code>.
+                            sans attributes in a form will submit your form to the <code>action</code> url and furthermore the database (to be expounded upon later...) We want this behavior to be explicit by setting the <code>type</code> attribute to <code>submit</code>.
+                        </li>
+                        <li>
+                            Give your data a <code>name</code> attribute to store it in the database that holds your user's data.
+                        </li>
+                        <li>
+                            Make checkbox choices mutually exclusive by only allowing them to select data under one name, i.e. only one 
+                        </li>
+                        <li>
+                            Use the <code>value</code> attribute to label your data further, as in the case where you have discrete specific options for a field.
+                        </li>
+                        <li>
+                        <code>fieldset</code> groups related fields.
+                            <ul>
+                            <li>
+                                The <code>&lt;legend&gt;</code> element provides a caption hinting at what to enter or select in your fieldset.
+                                    
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                        Use radio buttons for inputs with one answer and checkboxes for multiple-answer inputs.
+                        </li>
+                        <li>
+                        Make a selection default with the <code>selected</code> attribute, no value. It IS the value.
                         </li>
                     </ul>
                 </li>
