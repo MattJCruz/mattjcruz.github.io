@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Playfair Display";
-    src: url('Fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    src:url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
@@ -30,7 +30,7 @@ h2 {
     background-color: #CEE6F3;
 }
 
-code {
+code, pre {
     font-size: 20px;
     color: goldenrod;
 }
@@ -71,4 +71,10 @@ em {
     font-style: inherit;
 }
 
+.italic{
+    font-style: oblique;
+}
 
+.images{
+    border: solid 5px #c45525;
+}
