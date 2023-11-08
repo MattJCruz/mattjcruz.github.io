@@ -39,9 +39,8 @@ div.databox {
     background-color: #BA704F;
     padding: 20px;
     border: solid 5px #c45525;
-    /*border-radius: 20px;*/
-    margin-left: 5%;
-    margin-right: 5%;
+    border-radius: 20px;
+   margin: 20px 5% 20px 5%;
 }
 
 nav{
@@ -77,4 +76,36 @@ em {
 
 .images{
     border: solid 5px #c45525;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: #91482d;
+}
+
+ul#playlist {
+	border: 1px solid #a9a9a9;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+ul#playlist li {
+	border-bottom: 1px solid #a9a9a9;
+	padding: 10px;background-image: linear-gradient(#f9f9f9, #e3e3e3);
+}
+
+ul#playlist li:first-child {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+ul#playlist li:last-child {
+	border-bottom: none;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }

@@ -26,14 +26,13 @@
         </nav>
         <br>
         <div class="databox">
-        <h2>Design Fundamentals</h2>
+            <h2>Design Fundamentals</h2>
             <ul>
-            <li>
-                Choose a dominant color for a website and use its complement for drawing attention certain elements, much as I've done with my pale orange background and pale blue headings.
+                <li>
+                    Choose a dominant color for a website and use its complement for drawing attention certain elements, much as I've done with my pale orange background and pale blue headings.
                 </li>
             </ul>
         </div>
-        <br>
         <div class="databox">
             <h2>The Basics</h2>
             <ul>
@@ -46,11 +45,11 @@
                             <code>&lt;link rel="stylesheet" href="filename or URL"&gt;</code>
                         </li>
                     </ul>
-                    You can include CSS directly in your page using the <code>&lt;style&gt;</code> tag. Be mindful of the fact that making changes in the future will be difficult.
+                    You can include CSS directly in your page using the <code>&lt;style&gt;</code> tag. Not useful for applying style to multiple sheets.
                 </li>
                 <br>
                 <li>
-                    A CSS selector and the properties defined between its brackets is called, altogether, a <em>rule</em>.
+                    A CSS selector and the properties defined between its curly brackets is called, altogether, a <em>rule</em>.
                 </li>
                 <br>
                 <li>
@@ -63,25 +62,28 @@
                         <li>
                             The most specific rule always wins in this case.
                         </li>
-                    </ul>
-                </li>
-                <br>
-                <li>
+                    </ul>                
                     Use a descendant selector to change properties of certain elements within other elements that would otherwise inherit its parent's rules.
                     <ul>
                         <li>
                             <code>div h2 {color:black;}</code>
                         </li>
-                        This selects a heading within a div element to apply style to. Make it more specific with a <code>class</code> or <code>id</code> in case theres a chance another dive with an h2 in it shouldnt be black.
+                        This selects a heading within a div element to apply style to. Make it more specific with a <code>class</code> or <code>id</code> in case theres a chance another div with an h2 in it shouldnt be black.
                     </ul>
                 </li>
+                <!--
+<br>
+<li>
+Use a <code>&lt;span&gt;</code> element to mark inline text for styling with CSS.
+<ul>
+<li>
+<code>&lt;span style="color:green" &gt;</code>
+</li>
+</ul>
+</li>-->
                 <br>
                 <li>
-                    Use a <code>&lt;span&gt;</code> element to mark inline text for styling with CSS.
-                </li>
-                <br>
-                <li>
-                    Style a specific element by creating a class selector. State the element type followed by a dot, followed by the class name. Then you can define rules to your heart's content!<br> For example:<br>
+                    Style multiple elements at a time by creating a class selector. State the element type followed by a dot, followed by your desired class name. Then you can define rules to your heart's content! For example:<br>
                     <ul>
                         <li class="yellow">
                             <code>
@@ -89,7 +91,7 @@
                             </code>
                         </li>
                     </ul>
-                    And if you'd like to style ALL elements with the <code>yellow</code> class, simply omit the element name(s). Your syntax will then be .class
+                    To like to style ALL elements with the yellow class, simply omit the element name(s). Your syntax will then be .class
                     <ul>
                         <li class="yellow">
                             <code>
@@ -112,7 +114,7 @@
                 </li>
                 <br>
                 <li>
-                    These rules range in specificity. Element and class themselves equally are less specific than "element.class".
+                    These rules range in specificity. Element and class by themselves are less specific than "element.class".
                     <ul>
                         <li>
                             The most specific selector wins in terms of rule conflict, such as when rules format the same property differently.
@@ -124,19 +126,20 @@
                 </li>
                 <br>
                 <li>
-                    ID's can be selected by using a # symbol instead of a dot. Remember to give any single element <em>one unique ID</em>.
+                    Modify a single specific element using an ID via the # symbol instead of a dot. Remember to give this element <em>one unique ID</em> given we only want to modify that one with unique styling.
                     <ul>
                         <li>
                             <code>#id-name</code>
                         </li>
                     </ul>
                 </li>
+                <br>
                 <li>
-                    You can even override stylesheets! The lower they're <code>&lt;link&gt;</code>'ed in the head element, the more precedence they have over previous sheet(s).
+                    You can even override stylesheets! The lower they're <code>&lt;link&gt;</code>'ed in the head element, the more precedence they have over a previous sheet, just as with selectors.
                 </li>
                 <br>
                 <li>
-                    Use "/* */" to comment in CSS.<br>
+                    Use "/*&nbsp;&nbsp;&nbsp;*/" to comment in CSS.<br>
                     For example:
                     <ul>
                         <li>
@@ -147,18 +150,17 @@
                 <br>
             </ul>
         </div>
-        <br>
         <div class="databox">
             <h2>Text & Fonts</h2>
             <ul>
                 <li>
-                    A font family refers to either:
+                    A font family refers to:
                     <ul>
                         <li>
                             A group of fonts that share design characteristics, i.e. sans serif, serif, monospace, fantasy...
                         </li>
                         <li>
-                            A set of font variations based off one parent font, i.e. gothic, gothic bold, gothic italic...
+                            A single font and its variations based off one parent font, i.e. gothic, gothic bold, gothic italic...
                         </li>
                     </ul>
                 </li>
@@ -175,6 +177,7 @@
                                 }</code>
                         </li>
                     </ul>
+                    If your fonts are located in a separate folder, do not neglect to use the <em>..</em> ascend symbol in your url.
                 </li>
                 <br>
                 <li>
@@ -186,20 +189,20 @@
                         <li><code>text-decoration: underline, overline, line-through</code></li>
                         <li><code>text-align: center, start, justified;</code></li>
                         <li><code>line-height: 13px, 95%, 1.9em;</code></li>
-                        Line height can be set proportionally according to its own default size by using just a number as the property value.
                     </ul>
+                    Line height can be set proportionally according to its own default size by using just a number as the property value.
+                    <br><br>
                     <code>em</code> and <code>%</code> are proportional modifiers.
                 </li>
                 <br>
             </ul>
         </div>
-        <br>
         <div class="databox">
             <h2>The Box Model</h2>
             <ul>
                 <li>
-                    CSS treats HTML body elements like "layered" boxes. This is referred to as the Box Model.<br><br>
-                    <img src="boxmodel.png"><br>
+                    CSS treats HTML body elements like layered boxes. This is referred to as the Box Model.<br><br>
+                    <img src="../images/boxmodel.png"><br>
                     This box consists of four components:
                     <ul>
                         <li>
@@ -215,27 +218,24 @@
                             Margin
                         </li>
                     </ul>
-                    The content area contains, of course, the content contained in the element.
+                    The <em>content</em> area contains, of course, the content contained in the element.
                     <ul>
                         <li>
                             <code>width: 600px;</code>
-
                         </li>
                         <li><code>text-align: center;</code></li>
                         You may remember this from the Text &amp; Fonts section. It's responsible for aligning ALL of the content in the content pane, as opposed to just text.
                     </ul>
-                    The padding box provides space between the content and the border.
-                    <ul>
-
+                    The <em>padding</em> box provides space between the content and the border. Only its size may be edited.
+                    <ul>\
                         <li>
                             <code>padding: 25px;</code>
                         </li>
                         <li>
                             <code>padding-left: 80%;</code>
                         </li>
-
                     </ul>
-                    Borders contain the content and padding within a box whose appearance can be customized.
+                    The <em>border</em> box contains the content and padding within a box whose appearance can be customized.
                     <ul>
                         <li>
                             <code>border: solid 4px #c45525; </code>
@@ -250,7 +250,8 @@
                             <code>border-color: red, rgb(26%, 12%, 75%), #ff0011;</code>
                         </li>
                     </ul>
-                    The margin box provides space between the border and other elements.<br>
+                    The <em>margin</em> box provides space between the border and other elements.<br>
+                    <br>
                     Adjust padding and margin sizes with:
                     <ul>
                         <li> <code>margin: 30%;</code>
@@ -259,7 +260,9 @@
                             <code>margin-right: 50px;</code>
                         </li>
                     </ul>
-                    Add a position between "border" and property to edit specific borders.<br>
+                    When the <em>bottom and top</em> of an element meet each other, <em>the larger margin prevails.</em><br><br>
+                    
+                    Specify a position after the border property to edit a specific section.<br>
                     For rounded borders:<br>
                     <ul>
                         <li>
@@ -269,7 +272,7 @@
                             <code>border-bottom-right-radius: 0px;</code>
                         </li>
                     </ul>
-                    To effect changes on the top, right,bottom, and left, in that order, of your box discretely its helpful to use one property to set them rather than multiple separate statements.
+                    To effect changes on the top, right, bottom, and left, in that order, of your box discretely its helpful to use one property to set them rather than multiple separate statements.
                     <ul>
                         <li>
                             <code>padding: top right bottom ;eft; </code>
@@ -282,15 +285,14 @@
                 </li>
                 <br>
                 <li>
-                    Add a decorative image to an element using the background image property.<br>
-                    For example:
+                    Add a decorative image to an element using the <code>&lt;background image&gt;</code> property.<br>
                     <ul>
                         <li>
                             <code> background-image: url(url_goes_here.jpg);</code>
                         </li>
                     </ul>
                     Use this only when an image does not add function to your page, and is used only for decorative purposes.<br>
-                    Images used this way, by default, are generated in the top left of the element and repeat in a tiled manner.<br>
+                    Images used this way, by default, are generated in the top left of the element and repeat in a tiled manner from left to right and top to bottom.<br>
                     Address the repeating and positioning of your background image with these properties:
                     <ul>
                         <li>
@@ -303,7 +305,6 @@
                 </li>
             </ul>
         </div>
-        <br>
         <div class="databox">
             <h2>Layout</h2>
             <ul>
@@ -312,7 +313,7 @@
                 </li>
                 <br>
                 <li>
-                    Flow applies to inline elements as well, following the flow of the text, i.e. left to right, top to bottom. To further understand, treat text as if it were a flexible inline element.
+                    Flow applies to inline elements as well, following the flow of the text, i.e. left to right, top to bottom. Text is treated as if it were a flexible inline element.
                 </li>
                 <br>
                 <li>
@@ -326,8 +327,7 @@
                 </li>
             </ul>
         </div>
-        <br>
-        <div>
+        <div class="databox">
             Loose thoughts to add:
             <ul>
                 <li>
@@ -363,7 +363,7 @@
                 <li>
                     Box Model Modifications, contracted (pg. 482)
                 </li>
-                <li> I had trouble with the title div. The margins for the headings were combining just as warned, so include that as a special warning.
+                <li> I had trouble with the title div. The margins for the headings were clashing just as warned, so include that as a special warning.
                 </li>
             </ul>
         </div>

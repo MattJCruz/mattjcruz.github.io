@@ -1,172 +1,158 @@
 <!doctype html>
-
 <html lang="en">
 
-    <head>
-        <title>Javascript Notes</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/Notes++.css">
-        <script>
-            var arrayOne = new Array();
-            cheese[0] = "tom";
-            function init(){
-                var textbox1 = document.getElementById("testSubject");
-                textbox1.innerHTML = "New text Added!";
-                int i = 0;
-                while(i<10)
-                    {
-                        console.log(arrayOne[0]);
-                    }
-                
-            }
-            window.onload = init;
+<head>
+    <title>Javascript Notes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/Notes++.css">
+    <script src="JavascriptPractice.js"></script>
+</head>
 
-        </script>
-    </head>
-
-    <body>
-        <header>
-            <h1>Javascript Notes</h1>
-            <h3>The interactive aspect of web pages.</h3>
-        </header>
-        <br>
-        <nav>
-            <ul class="nav">
-                <li class="nav">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="nav">
-                    <a href="HTMLNotes.html">HTML Notes</a>
-                </li>
-                <li class="nav">
-                    <a href="CSSNotes.html">CSS Notes</a>
-                </li>
-            </ul>
-        </nav>
-        <br>
-        <div class="databox" id="testSubject">
-            Text box test
-        </div>
-        <br>
-        <div class="databox" id="basic">
-            <h2>The Basics</h2>
-            Javascript is, at the end of the day, a programming language. Many of its properties are shared with many other languages, and as such those facts will be excluded, i.e. variables, booleans, if statements etc., due to the fact I'm already intimately acquainted with them at this point.
-            <ul>
-                <li>
-                    Use the
-                    <code>&lt;script&gt;</code> element to embed Javascript into your page. Put raw javascript between the tags or add a <code>src</code> attribute linking to your external javascript file.
-                    <ul>
-                        <li>
-                            It can go in the <code>&lt;head&gt;</code>, where it'll be evaluated before your page loads, or <code>body</code>, where its executed as the page loads, often used to generate content for your page.
-                        </li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    Javascript is a scripting language, a programming language that's interpreted or compiled at runtime, as opposed to being compiled before runtime as is usually the case with Object Oriented Programs.
-                </li>
-                <br>
-                <li>
-                    Declare variables with the <code>let</code> keyword to avoid accidentally reinstantiating variables, as is apparently prone to happen using the previously standart <code>var</code> keyword. (For the record, I have never personally accidentally tried to instantiate a variable twice in ANY language.)
-                </li>
-                <br>
-                <li>
-                    There are no explicitly stated data types. They're determined implicitly and apparently can be changed on the fly when circumstances demand it, referred to as "Dynamic Typing". Perhaps useful in some capacity but seems to lead to bad habits like instantiating variables twice.
-                </li>
-                <br>
-                <li>
-                    As with other languages, use camelCase when naming them.
-                </li>
-                <br>
-                <li>
-                    Variables can have a datatype of Integer, Floating Point Value, String (of characters), or Boolean. A variable with no value has a value of <code>undefined</code>.
-                </li>
-                <br>
-                <li>
-                    Name variables starting with a letter, underscore, or dollar sign, and every subsequent character can be one of the above, a number, or any other symbol excluding <code>+, -,</code> and spaces.
-                    <ul>
-                        <li>
-                            Additionally they're case-sensitive. NUM1 and num1 are two different variable names.
-                        </li>
-                        <li>
-                            Avoid using Javascript reserved keywords as variable names.
-                        </li>
-                        <li>
-                            Make your variable names meaningful.
-                        </li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    Application Programming Interfaces (API's) are used to access additional functionality beyond the scope of a simple program.
-                </li>
-                <br>
-                <li>
-                    Strings are surrounded with double quotes or single quotes, as it appears characters do not exist as a data type.
-                </li>
-                <br>
-                <li>
-                    A variable with a set value will be considered true in a boolean expression, while an empty one will be considered false.
-                </li>
-                <br>
-                <li>
-                    Use console.log to write to the javascript console in your environment.
-                </li>
-                <br>
-                <li>
-                    To write to an HTML document in Javascript, use the <code>document.write</code> function. This is not recommended as there are (apparently?) better ways to do this.
-                </li>
-                <br>
-                <li>
-                    Look into floating point numbers and finite precision.
-                </li>
-                <br>
-                <li>
-                    Remember the % (remainder/modulus) operator
-                </li>
-                <br>
-                <li>
-                    Declare an array with:<br>
-                    <code>
-                        var arrayOne = new Array();
-                    </code> <br> <code> var arrayTwo = [ 25, 54, 321, 54];</code><br><br>
-                    Add values to it using:<br>
-                    <code>
-                        arrayOne[0] = 12;
-                    </code><br>
-                    Omit the assignment operation to use the value located at that specific index.
-                    <br><br>
-                    Get the length of your array with its .length property.
-                    <code>arrayCount - arrayOne.length;</code>
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div class="databox" id="dom">
-            <h2>The Document Object Model (DOM)</h2>
-            <em>Page Marker: 103</em>
+<body>
+    <header>
+        <h1>Javascript Notes</h1>
+        <h3>The interactive aspect of web pages.</h3>
+    </header>
+    <br>
+    <nav>
+        <ul class="nav">
+            <li class="nav">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav">
+                <a href="HTMLNotes.html">HTML Notes</a>
+            </li>
+            <li class="nav">
+                <a href="CSSNotes.html">CSS Notes</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="databox">
+        <form>
+            <input type="text" id="songTextInput" size="40" placeholder="Song name">
+            <input type="button" id="addButton" value="Add Song">
+        </form>
+        <ul id="playlist">
+        </ul>
+    </div>
+    <div class="databox" id="basic">
+        <h2>The Basics</h2>
+        Javascript is, at the end of the day, a programming language. Many of its properties are shared with many other languages, and as such those facts will be excluded, i.e. variables, booleans, if statements etc., due to the fact I'm already intimately acquainted with them at this point.
+        <ul>
             <li>
-                Java script uses the <em>Document Object Model</em>, or <em>DOM</em> to interact with your HTML File.<br><br>
-                <img src="images/DOMDiagram.png" class="images"><br><br>
-                This (upside-down) tree of elements is created by your browser parsing your HTML document.  Javascript uses it to manipulate elements and their content dynamically. <em>The DOM is only created when a page is loaded in your browser, and it's done so sequentially.</em> Keep this in mind. <br><br>
-                Javascript uses this function to gain access to a specific element according to its ID: <br><br>
-                <code>document.getElementById("idname");</code><br><br>
-                The document is accessed at the "root(s)" of the tree and the specified id is selected. 
-                Now we'll use this function to manipulate the content of the element.
-                <pre>
+                Use the
+                <code>&lt;script&gt;</code> element to embed Javascript into your page. Put raw javascript between the tags or add a <code>src</code> attribute linking to your external javascript file.
+                <ul>
+                    <li>
+                        It can go in the <code>&lt;head&gt;</code>, where it'll be evaluated before your page loads, or <code>body</code>, where its executed as the page loads, often used to generate content for your page.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Javascript is a scripting language, a programming language that's interpreted or compiled at runtime, as opposed to being compiled before runtime as is usually the case with Object Oriented Programs.
+            </li>
+            <br>
+            <li>
+                Declare variables with the <code>let</code> keyword to avoid accidentally reinstantiating variables, as is apparently prone to happen using the previously standart <code>var</code> keyword. (For the record, I have never personally accidentally tried to instantiate a variable twice in ANY language.)
+            </li>
+            <br>
+            <li>
+                There are no explicitly stated data types. They're determined implicitly and apparently can be changed on the fly when circumstances demand it, referred to as "Dynamic Typing". Perhaps useful in some capacity but seems to lead to bad habits like instantiating variables twice.
+            </li>
+            <br>
+            <li>
+                As with other languages, use camelCase when naming them.
+            </li>
+            <br>
+            <li>
+                Variables can have a datatype of Integer, Floating Point Value, String (of characters), or Boolean. A variable with no value has a value of <code>undefined</code>.
+            </li>
+            <br>
+            <li>
+                Name variables starting with a letter, underscore, or dollar sign, and every subsequent character can be one of the above, a number, or any other symbol excluding <code>+, -,</code> and spaces.
+                <ul>
+                    <li>
+                        Additionally they're case-sensitive. NUM1 and num1 are two different variable names.
+                    </li>
+                    <li>
+                        Avoid using Javascript reserved keywords as variable names.
+                    </li>
+                    <li>
+                        Make your variable names meaningful.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Application Programming Interfaces (API's) are used to access additional functionality beyond the scope of a simple program.
+            </li>
+            <br>
+            <li>
+                Strings are surrounded with double quotes or single quotes, as it appears characters do not exist as a data type.
+            </li>
+            <br>
+            <li>
+                A variable with a set value will be considered true in a boolean expression, while an empty one will be considered false.
+            </li>
+            <br>
+            <li>
+                Use console.log to write to the javascript console in your environment.
+            </li>
+            <br>
+            <li>
+                To write to an HTML document in Javascript, use the <code>document.write</code> function. This is not recommended as there are (apparently?) better ways to do this.
+            </li>
+            <br>
+            <li>
+                Look into floating point numbers and finite precision.
+            </li>
+            <br>
+            <li>
+                Remember the % (remainder/modulus) operator
+            </li>
+            <br>
+            <li>
+                Declare an array with:<br>
+                <code>
+                    var arrayOne = new Array();
+                </code> <br> <code> var arrayTwo = [ 25, 54, 321, 54];</code><br><br>
+                Add values to it using:<br>
+                <code>
+                    arrayOne[0] = 12;
+                </code><br>
+                Omit the assignment operation to use the value located at that specific index.
+                <br><br>
+                Get the length of your array with its .length property.
+                <code>arrayCount - arrayOne.length;</code>
+            </li>
+        </ul>
+    </div>
+    <div class="databox" id="dom">
+        <h2>The Document Object Model (DOM)</h2>
+        <em>Page Marker: 103</em>
+        <li>
+            Java script uses the <em>Document Object Model</em>, or <em>DOM</em> to interact with your HTML File.<br><br>
+            <img src="images/DOMDiagram.png" class="images"><br><br>
+            This (upside-down) tree of elements is created by your browser parsing your HTML document. Javascript uses it to manipulate elements and their content dynamically. <em>The DOM is only created when a page is loaded in your browser, and it's done so sequentially.</em> Keep this in mind. <br><br>
+            Javascript uses this function to gain access to a specific element according to its ID: <br><br>
+            <code>document.getElementById("idname");</code><br><br>
+            The document is accessed at the "root(s)" of the tree and the specified id is selected.
+            Now we'll use this function to manipulate the content of the element.
+            <pre>
                 var text = document.getElementById("idname");
                 text.innerHTML = "New text Added!";
                 </pre>
-                If you're including this code between your <code>&lt;script&gt;</code>tags in the <code>&lt;head&gt;</code> of your page, remember to tell the page to execute the code AFTER the document-object-model is fully created, since it will be executed as soon as the <code>&lt;script&gt;</code> tag is added to the DOM.
-                <pre>
+            If you're including this code between your <code>&lt;script&gt;</code>tags in the <code>&lt;head&gt;</code> of your page, remember to tell the page to execute the code AFTER the document-object-model is fully created, since it will be executed as soon as the <code>&lt;script&gt;</code> tag is added to the DOM.
+            <pre>
                 function init(){
                         /*Your code here*/                
                 }
 
                 window.onload = init;
                 </pre>
-            </li>
-        </div>
-    </body>
+        </li>
+    </div>
+</body>
 
 </html>
