@@ -4,10 +4,9 @@
 <head>
     <title>Javascript Notes</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/Notes++.css">
+    <link rel="stylesheet" href="../css/Notes++.css">
     <script src="playlist.js"></script>
 </head>
-
 <body>
     <header>
         <h1>Javascript Notes</h1>
@@ -122,27 +121,28 @@
     </div>
     <div class="databox" id="dom">
         <h2>The Document Object Model (DOM)</h2>
-        <em>Page Marker: 103</em>
         <li>
             Java script uses the <em>Document Object Model</em>, or <em>DOM</em> to interact with your HTML File.<br><br>
             <img src="images/DOMDiagram.png" class="images"><br><br>
             This (upside-down) tree of elements is created by your browser parsing your HTML document. Javascript uses it to manipulate elements and their content dynamically. <em>The DOM is only created when a page is loaded in your browser, and it's done so sequentially.</em> Keep this in mind. <br><br>
             Javascript uses this function to gain access to a specific element according to its ID: <br><br>
             <code>document.getElementById("idname");</code><br><br>
-            The document is accessed at the "root(s)" of the tree and the specified id is selected.
-            Now we'll use this function to manipulate the content of the element.
+            The document is accessed at the "root(s)" of the tree and the specified ID is selected.
+            Now we'll use this function to manipulate the content of the element with the specified ID.
             <pre>
-                var text = document.getElementById("idname");
-                text.innerHTML = "New text Added!";
+var text = document.getElementById("idname");
+text.innerHTML = "New text Added!";
                 </pre>
-            If you're including this code between your <code>&lt;script&gt;</code>tags in the <code>&lt;head&gt;</code> of your page, remember to tell the page to execute the code AFTER the document-object-model is fully created, since it will be executed as soon as the <code>&lt;script&gt;</code> tag is added to the DOM.
+            If you're including this code between your <code>&lt;script&gt;</code>tags in the <code>&lt;head&gt;</code> of your page, remember to tell the page to execute the code AFTER the document-object-model is fully created, since it will be executed as soon as the <code>&lt;script&gt;</code> tag is added to the DOM. 
             <pre>
-                function init(){
-                        /*Your code here*/                
-                }
-
-                window.onload = init;
+function init(){
+        /*Your code here*/                
+ }
+window.onload = init;
                 </pre>
+            
+            <em>* Upon further testing, it seems even code included via separate .js file is also fully evaluated upon inclusion of the <code>&lt;script&gt;</code> to the DOM. This necessitates that variables referencing as-of-yet nonexistent DOM elements also need to be kept inside a function initialized/initiated upon the full loading of a window.</em><br><br>
+            <em>*Upon FURTHER further testing (and an epiphany from an online code example), it seems the position of the <code>script</code> tag is not mandatorily at the top of the page. It can be placed anywhere in the body... especially after all loadable elements... so your DOM can fully load prior to loading your Javascript. Please pardon me while i go scream for a bit.</em>
         </li>
     </div>
     <div class="databox" id="objprops">
