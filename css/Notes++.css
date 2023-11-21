@@ -40,7 +40,7 @@ div.databox {
     padding: 20px;
     border: solid 5px #c45525;
     border-radius: 20px;
-   margin: 20px 5% 20px 5%;
+    margin: 20px 5% 20px 5%;
 }
 
 nav{
@@ -70,6 +70,18 @@ em {
     font-style: inherit;
 }
 
+img {
+    border-radius: 12px;
+}
+
+blockquote {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg,  rgba(255,200,0,1) 40%,rgba(186,112,79,100) 70%);
+    text-align: left;
+    margin-left: 0px;
+    border-radius: 24px;
+}
+
 .italic{
     font-style: oblique;
 }
@@ -87,25 +99,25 @@ em {
 }
 
 ul#playlist {
-	border: 1px solid #a9a9a9;
-	border-radius: 5px;
-	margin-top: 10px;
-	padding: 0px;
-	list-style-type: none;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0px;
+    list-style-type: none;
 }
 
 ul#playlist li {
-	border-bottom: 1px solid #a9a9a9;
-	padding: 10px;background-image: linear-gradient(#f9f9f9, #e3e3e3);
+    border-bottom: 1px solid #a9a9a9;
+    padding: 10px;background-image: linear-gradient(#f9f9f9, #e3e3e3);
 }
 
 ul#playlist li:first-child {
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 ul#playlist li:last-child {
-	border-bottom: none;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
+    border-bottom: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
