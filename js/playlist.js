@@ -13,7 +13,11 @@ function handleButtonClick() {
     var ul = document.getElementById("playlist");
     ul.appendChild(li);
     alert("Added "+ songName);
+    
+    
 }
+
+FUnctions will  
 //1.Get your element into terms JS can understand by getting the element by ID. Stick it into a variable and it becomes what I believe to be an object whose properties (such as value, in this case the text currently typed into it) can be accessed via the dot (.) operator.
 //2. Make sure you're getting the value of the right element, otherwise you'll be trying to get the value of a button, like I did.
 //3. Make sure all your function names are capitalized (or not, in this case) properly. It's "Id", not "ID".
