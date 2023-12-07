@@ -5,7 +5,7 @@
         <title>Javascript Notes</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/Notes++.css">
-        
+
     </head>
     <body>
         <script src="../js/playlist.js"></script>
@@ -13,7 +13,6 @@
             <h1>Javascript Notes</h1>
             <h3>The interactive aspect of web pages.</h3>
         </header>
-        <br>
         <nav>
             <ul class="nav">
                 <li class="nav">
@@ -27,6 +26,21 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="databox" id="trivia">
+            <h2>Trivia</h2>
+            <ul>
+                <li>
+                    Javascript, originally "Mocha", was created originally in 1995 by  Brendan Eich at Netscape.
+                </li>
+                <li>
+                    JScript, a "dialect" of sorts for Javascript, was released simultaneously as Javascript, meaning two different versions of the language were now on the market.
+                </li>
+                <li>
+                    There was no standardized syntax for the language at the time. To remedy this, Javascript 1.1 was submitted to the European Computer Manufacturers Association (ECMA) in 1997. The committee appointed to the task of standardizing Javascript made it vendor-neutral, general-purpose, and cross-platform, thusly dubbed "ECMAscript". This is the raw standardized version of Javascript.
+                </li>
+            </ul>        
+        </div>
         <div class="databox" id="basic">
             <h2>The Basics</h2>
             Javascript is, at the end of the day, a programming language. Many of its properties are shared with many other languages, and as such those facts will be excluded, i.e. variables, booleans, if statements etc., due to the fact I'm already intimately acquainted with them at this point.
@@ -40,27 +54,21 @@
                         </li>
                     </ul>
                 </li>
-                <br>
                 <li>
                     Javascript is a scripting language, a programming language that's interpreted or compiled at runtime, as opposed to being compiled before runtime as is usually the case with Object Oriented Programs.
                 </li>
-                <br>
                 <li>
                     Declare variables with the <code>let</code> keyword to avoid accidentally reinstantiating variables, as is apparently prone to happen using the previously standart <code>var</code> keyword. (For the record, I have never personally accidentally tried to instantiate a variable twice in ANY language.)
                 </li>
-                <br>
                 <li>
                     There are no explicitly stated data types. They're determined implicitly and apparently can be changed on the fly when circumstances demand it, referred to as "Dynamic Typing". Perhaps useful in some capacity but seems to lead to bad habits like instantiating variables twice.
                 </li>
-                <br>
                 <li>
                     As with other languages, use camelCase when naming them.
                 </li>
-                <br>
                 <li>
                     Variables can have a datatype of Integer, Floating Point Value, String (of characters), or Boolean. A variable with no value has a value of <code>undefined</code>.
                 </li>
-                <br>
                 <li>
                     Name variables starting with a letter, underscore, or dollar sign, and every subsequent character can be one of the above, a number, or any other symbol excluding <code>+, -,</code> and spaces.
                     <ul>
@@ -75,35 +83,27 @@
                         </li>
                     </ul>
                 </li>
-                <br>
                 <li>
                     Application Programming Interfaces (API's) are used to access additional functionality beyond the scope of a simple program.
                 </li>
-                <br>
                 <li>
                     Strings are surrounded with double quotes or single quotes, as it appears characters do not exist as a data type.
                 </li>
-                <br>
                 <li>
                     A variable with a set value will be considered true in a boolean expression, while an empty one will be considered false.
                 </li>
-                <br>
                 <li>
                     Use console.log to write to the javascript console in your environment.
                 </li>
-                <br>
                 <li>
                     To write to an HTML document in Javascript, use the <code>document.write</code> function. This is not recommended as there are (apparently?) better ways to do this.
                 </li>
-                <br>
                 <li>
                     Look into floating point numbers and finite precision.
                 </li>
-                <br>
                 <li>
                     Remember the % (remainder/modulus) operator
                 </li>
-                <br>
                 <li>
                     Declare an array with:<br>
                     <code>
@@ -127,7 +127,7 @@
                     Java script uses the <em>Document Object Model</em>, or <em>DOM</em> to interact with your HTML File.<br><br>
                     <img src="../images/DOMDiagram.png" class="images" alt="An image showing a dendrogram of html elements in the Document Object Model, or DOM"><br><br>
                     This (upside-down) tree of elements is created by your browser parsing your HTML document. Javascript uses it to manipulate elements and their content dynamically. <em>The DOM is only created when a page is loaded in your browser, and it's done so sequentially.</em> Keep this in mind.<br><br>
-                <li>Gain access to a specific element according to its ID using the <code>&lt;getElementById&gt;</code> function:</li> <code>document.getElementById("idname");</code><br><br>
+                <li>Gain access to a specific element according to its ID using the <code>&lt;getElementById&gt;</code> function:</li> <code>document.getElementById("idname");</code>
                 <li>The document is accessed at the "root(s)" of the tree and the specified ID is selected.
                     Now we'll use this function to manipulate the content of the element with the specified ID using the <code>innerHTML</code> property.</li>
                 <pre>
@@ -145,7 +145,7 @@ window.onload = init;
                 </pre>
                 Alternatively, the <code>&lt;script&gt;</code> tag can be placed after all loadable elements, speeding up runtime* and allowing the DOM to fully load prior to loading your Javascript.<br><br>
                 <li>
-                Create a new HTML element using the createElement function.<br><br>
+                    Create a new HTML element using the createElement function.<br><br>
                 </li>
                 <code>var li = document.createElement("li");</code><br>
                 This function creates an element of a type specified in the parameters and returns (a reference to) the element. In this statement the reference is stored in a variable called <code>li</code>.
@@ -153,17 +153,49 @@ window.onload = init;
             </ul>
         </div>
         <div class="databox" id="objprops">
-            <h2>Functions, Objects, &amp; Properties</h2>
+            <h2>Variables, Objects, Properties, &amp; Functions</h2>
+            <h3>Variables</h3>
             <ul>
                 <li>
+                    Local variables are ones defined inside a function. Global variables are not.
                 </li>
+                <li>
+                    Variables are defined with the var or let keywords. They exist for as long as the page does, i.e. their values are not stored.
+                </li>
+                <li>
+                    <em>Shadowing</em> a variable refers to defining a variable within a function that shares a name with a global variable. The value of the variable within the function is discrete from the value of the global variable, i.e. the global variable is in the shadow of the local one.
+                </li>
+
+            </ul>
+            <h3>Functions</h3>
+            <ul>
+                <li>
+                    In cases where functions share the same name, by accident or otherwise, the last incidence of a named function will be used.
+                </li>
+                <li>
+                    Functions can be used as values.
+                </li>
+                <code>window.onload="init"</code><br><br>
+                Here the init function, our onload handler used to execute code once the DOM is fully loaded, is set as the value of the onload property of the window object. I had assumed it was being called, but when i added parentheses to my init it seemed to be called as soon as the page was loaded, no matter what. This seems to be a workaround to it.<br>
+                <li>
+                    Additionally, functions can be called anonymously.
+                </li>
+                <code>var f = function(num) {
+                    return num + 1;
+                    }<br>
+                    var result = f(1);</code><br><br>
+                This all suggests more that <em>functions ARE values.</em> With this in mind, we can further compact our handler into one line of code for readability. <br>
+                <code>window.onload = function() {<br>
+alert("you rule!");
+}</code>
+
             </ul>
         </div>
         <div class="databox" id="events">
             <h2>Events</h2>
             <ul>
                 <li>
-                    In Javascript, and <em>event</em> is something that happens to which Javascript can respond to, or "handle", with code, i.e. a button press.
+                    In Javascript, an <em>event</em> is something that happens to which Javascript can respond to, or "handle", with code, i.e. a button press.
                 </li>
             </ul>
         </div>
@@ -175,6 +207,10 @@ window.onload = init;
             <ul id="playlist">
             </ul>
         </div>
+        <div class="databox" id="toAdd">
+            pg. 127(163) include info regarding how a javascript file is "parsed" upon loading.
+        </div>
+
     </body>
 
 </html>

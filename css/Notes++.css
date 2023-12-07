@@ -30,9 +30,11 @@ h2 {
     background-color: #CEE6F3;
 }
 
-code, pre {
+code, pre,  {
     font-size: 20px;
     color: goldenrod;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 div.databox {
@@ -54,6 +56,10 @@ ul.nav {
     padding: 0;
     width: max-content;
     text-align: center;
+}
+
+li {
+    margin-bottom: 20px;
 }
 
 li.nav {
