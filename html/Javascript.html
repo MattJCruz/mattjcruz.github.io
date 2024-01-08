@@ -1,11 +1,9 @@
 <!doctype html>
 <html lang="en">
-
     <head>
         <title>Javascript Notes</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/Notes++.css">
-
     </head>
     <body>
         <script src="../js/playlist.js"></script>
@@ -13,6 +11,7 @@
             <h1>Javascript Notes</h1>
             <h3>The interactive aspect of web pages.</h3>
         </header>
+        <br>
         <nav>
             <ul class="nav">
                 <li class="nav">
@@ -26,7 +25,17 @@
                 </li>
             </ul>
         </nav>
-
+        <div class="databox">
+            Bookmarks
+            <ul>
+            <li>
+                HTML5 Programming: pg 136 (172)
+                </li>
+                <li>
+                Javascript: 
+                </li>
+            </ul>
+        </div>
         <div class="databox" id="trivia">
             <h2>Trivia</h2>
             <ul>
@@ -153,7 +162,7 @@ window.onload = init;
             </ul>
         </div>
         <div class="databox" id="objprops">
-            <h2>Variables, Objects, Properties, &amp; Functions</h2>
+            <h2>Variables, Functions, Objects, &amp; Properties</h2>
             <h3>Variables</h3>
             <ul>
                 <li>
@@ -186,10 +195,39 @@ window.onload = init;
                     var result = f(1);</code><br><br>
                 This all suggests more that <em>functions ARE values.</em> With this in mind, we can further compact our handler into one line of code for readability. <br>
                 <code>window.onload = function() {<br>
-alert("you rule!");
-}</code>
-
+                    alert("you rule!");
+                    }</code>
             </ul>
+            <h3>Objects</h3>
+            <ul>
+                <li>An object is, essentially, a collection of properties, AKA: variables!
+                </li>
+                <li>
+                Create an object by setting the value of a variable to a set of parentheses.
+                </li>
+                <code>
+                var objectExample = {<br>
+                    firstVar: "String",<br>
+                    varTwo: 32,<br>
+                    var3rd: ["firstElement", "2ndElement"]
+                    <br>}
+                </code><br><br>
+                Then list each variable (property) you'd like, ending each declaration with a comma rather than a semicolon.<br><br>
+                <li>
+                You can access a property from an object in different ways.<br><br>
+                    
+                    Via <em>dot notation</em>:
+                </li>
+                <code>
+                objectExample.var3rd[1] = "12";
+                </code><br><br>
+                Via <em>string notation</em>:<br><br>
+                <code>var b</code>
+                <br>
+                As it stands, this flies in the face of OOP principles, where classes are  Just objects themselves. This is in direct opposition to java, where objects are built from classes, and thus reusable. Here in javascript the object is synonymous with its "class" declaration.
+            </ul>
+            
+            133
         </div>
         <div class="databox" id="events">
             <h2>Events</h2>
