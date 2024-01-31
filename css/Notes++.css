@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Playfair Display";
-    src:url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+ src:url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
@@ -28,6 +28,8 @@ h2 {
     border-radius: 20px;
     font-style: oblique;
     background-color: #CEE6F3;
+}
+h4 {
 }
 
 code, pre,  {
