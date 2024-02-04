@@ -1,35 +1,40 @@
 @font-face {
     font-family: "Playfair Display";
- src:url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+    src:url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
-    background-color: #f79079;
+    background-color: #40A2E3;
     font-family: "Playfair Display";
 }
 
-header {
-    background-color: #CEE6F3;
-    text-align: center;
-    padding: 12px;
-    border: solid 5px #c45525;
-    border-radius: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+/*header {
+background-color: #CEE6F3;
+text-align: center;
+padding: 12px;
+border: solid 5px #c45525;
+border-radius: 20px;
+margin-left: 5%;
+margin-right: 5%;
+}*/
+
+h1{
+    width: 8%;
+    margin: auto;
+    font-size: 50px;
+    
 }
 
-h1, h3{
-    margin: 0px;
-}
-
-h2 {
+h1, h2, h4 {
     text-align: center;
-    border: solid 5px #c45525;
+    border: solid 5px #0D9276;
     border-radius: 20px;
     font-style: oblique;
-    background-color: #CEE6F3;
+    background-color: #FFF6E9;
+    padding: auto;
 }
-h4 {
+h3 {
+    text-align: center;
 }
 
 code, pre,  {
@@ -40,19 +45,19 @@ code, pre,  {
 }
 
 div.databox {
-    background-color: #BA704F;
+    background-color: #BBE2EC;
     padding: 20px;
-    border: solid 5px #c45525;
+    border: solid 5px #0D9276;
     border-radius: 20px;
     margin: 20px 5% 20px 5%;
 }
 
 nav{
-    stext-align: center;
+    text-align: center;
 }
 
 ul.nav {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 0px;
     margin: auto;
     padding: 0;
@@ -69,7 +74,7 @@ li.nav {
 }
 
 ul li ul {
-    color: #d4ac9d;
+    /*color: #d4ac9d;*/
     font-size: 1.1em;
 }
 
