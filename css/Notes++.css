@@ -19,10 +19,12 @@ margin-right: 5%;
 }*/
 
 h1{
-    width: 8%;
+    width: fit-content;
     margin: auto;
     font-size: 50px;
-    
+    padding-left: 15px;
+    padding-right: 18px;
+    padding-bottom: 8px;
 }
 
 h1, h2, h4 {
@@ -50,10 +52,6 @@ div.databox {
     border: solid 5px #0D9276;
     border-radius: 20px;
     margin: 20px 5% 20px 5%;
-}
-
-nav{
-    text-align: center;
 }
 
 ul.nav {
@@ -85,6 +83,7 @@ em {
 
 img {
     border-radius: 12px;
+    border: solid 5px #0D9276;
 }
 
 blockquote {
@@ -97,10 +96,6 @@ blockquote {
 
 .italic{
     font-style: oblique;
-}
-
-.images{
-    border: solid 5px #c45525;
 }
 
 .yellow {
