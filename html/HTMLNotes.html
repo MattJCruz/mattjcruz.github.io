@@ -26,87 +26,84 @@
         </nav>
         <div class="databox">
             <h2>The Basics</h2>
+
+
+            HTML is primarily a markup language, not a formatting language. It's meant to demarcate elements for SEO (search engine optimization) and accessibility. For all intents and purposes it's all function, no form.
             <ul>
                 <li>
-                    HTML is primarily a markup language, not a formatting language. It's meant to demarcate elements for SEO (search engine optimization) and accessibility. For all intents and purposes it's all function, no form.
-                    <ul>
-                        <li>
-                            Browsers may provide formatting, but this can vary from browser to browser and should not be depended on. Use CSS for formatting.<br>
-                        </li>
-                    </ul>
+                    Browsers may provide formatting, but this can vary from browser to browser and should not be depended on. Use CSS for formatting.<br>
                 </li>
-                <br>
-                <li>
-                    Any HTML document you author should be tightly formatted so everything works as intended. This keeps the document up to current specifications (up to spec) as outlined by the World Wide Web Consortium.
-                    <ul>
-                        <li>
-                            Browsers will pick up the slack if your document is sloppily written but certain features may not work as intended, if at all.
-                        </li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    When you write an HTML document be sure to tell your browser:
-                    <ul>
-                        <li>
-                            what kind of document it's working with using<code>&lt;!doctype html&gt;</code> at the very top of the page
-                        </li>
-                        <li>
-                            what encoding to use for your document with <code>&lt;meta charset="utf-8"&gt;</code> in the <code>&lt;head&gt;</code> element.
-                        </li>
-                        <li>
-                            what language your page is written in (English, most likely) with the <code>lang="en"</code> attribute in your html tag.
-                        </li>
-                    </ul>
-                    And tell your user:
-                    <ul>
-                        <li>
-                            what your page is all about with a <code>&lt;title&gt;</code> tag in the <code>&lt;head&gt;</code> element.
-                        </li>
-                    </ul>
-                    Including these important elements will help keep your document up to spec.
-                </li>
-                <br>
-
-                <li>
-                    Anything you add to the document needs to go in either the<code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> element, never directly into the &lt;html&gt; element.
-                </li>
-                <br>
-                <li>
-                    Demarcate meaningful sections of your webpage with the <code>&lt;div&gt;</code> element.
-                    <ul>
-                        <li>
-                            <code>&lt;div&gt;This section is dedicated to a specific topic. Here goes the content...&lt;/div&gt;</code>
-                        </li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    When navigating file trees, use ".." to ascend a level in the tree, to navigate to a higher folder and subsequently down to the one you need.
-                    <ul>
-                        <li>
-                            <code>&lt;a href="../HTMLDocuments/otherpage.html"&gt;</code><br>
-                            This traverses out of the current folder to the superfolder and down into the HTMLDocuments folder for the desired html sheet.
-                        </li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    Consistency is key. It's best practice to use lowercase for <em>all</em> of your classes and id's. No spaces.
-                    <ul>
-                        <li>
-                            This will make referencing them later easier on you if you don't
-                            have to remember whether or not this specific id is all lowercase or that specific one is PascalCase.
-                        </li>
-                    </ul>
-                </li>
-                <br>
-                <li>
-                    Use the <a href="https://validator.w3.org/">W3C Validator</a> to ensure your document is
-                    up to spec (specification) as defined by HTML5.
-                </li>
-                <br>
             </ul>
+            <br>
+            Any HTML document you author should be tightly formatted so everything works as intended. This keeps the document up to current specifications (up to spec) as outlined by the World Wide Web Consortium.
+            <ul>
+                <li>
+                    Browsers will pick up the slack if your document is sloppily written but certain features may not work as intended, if at all.
+                </li>
+            </ul>
+
+            <br>
+            
+                When you write an HTML document be sure to tell your browser:
+                <ul>
+                    <li>
+                        what kind of document it's working with using<code>&lt;!doctype html&gt;</code> at the very top of the page
+                    </li>
+                    <li>
+                        what encoding to use for your document with <code>&lt;meta charset="utf-8"&gt;</code> in the <code>&lt;head&gt;</code> element.
+                    </li>
+                    <li>
+                        what language your page is written in (English, most likely) with the <code>lang="en"</code> attribute in your html tag.
+                    </li>
+                </ul>
+                And tell your user:
+                <ul>
+                    <li>
+                        what your page is all about with a <code>&lt;title&gt;</code> tag in the <code>&lt;head&gt;</code> element.
+                    </li>
+                </ul>
+                Including these important elements will help keep your document up to spec.
+            
+            <br>
+            <li>
+                Anything you add to the document needs to go in either the<code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> element, never directly into the &lt;html&gt; element.
+            </li>
+            <br>
+            <li>
+                Demarcate meaningful sections of your webpage with the <code>&lt;div&gt;</code> element.
+                <ul>
+                    <li>
+                        <code>&lt;div&gt;This section is dedicated to a specific topic. Here goes the content...&lt;/div&gt;</code>
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                When navigating file trees, use ".." to ascend a level in the tree, to navigate to a higher folder and subsequently down to the one you need.
+                <ul>
+                    <li>
+                        <code>&lt;a href="../HTMLDocuments/otherpage.html"&gt;</code><br>
+                        This traverses out of the current folder to the superfolder and down into the HTMLDocuments folder for the desired html sheet.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Consistency is key. It's best practice to use lowercase for <em>all</em> of your classes and id's. No spaces.
+                <ul>
+                    <li>
+                        This will make referencing them later easier on you if you don't
+                        have to remember whether or not this specific id is all lowercase or that specific one is PascalCase.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Use the <a href="https://validator.w3.org/">W3C Validator</a> to ensure your document is
+                up to spec (specification) as defined by HTML5.
+            </li>
+            <br>
+
         </div>
         <div class="databox">
             <h2>Linking</h2>
@@ -271,19 +268,19 @@
                             Use the <code>value</code> attribute to label your data further, as in the case where you have discrete specific options for a field.
                         </li>
                         <li>
-                        <code>fieldset</code> groups related fields.
+                            <code>fieldset</code> groups related fields.
                             <ul>
-                            <li>
-                                The <code>&lt;legend&gt;</code> element provides a caption hinting at what to enter or select in your fieldset.
-                                    
+                                <li>
+                                    The <code>&lt;legend&gt;</code> element provides a caption hinting at what to enter or select in your fieldset.
+
                                 </li>
                             </ul>
                         </li>
                         <li>
-                        Use radio buttons for inputs with one answer and checkboxes for multiple-answer inputs.
+                            Use radio buttons for inputs with one answer and checkboxes for multiple-answer inputs.
                         </li>
                         <li>
-                        Make a selection default with the <code>selected</code> attribute, no value. It IS the value.
+                            Make a selection default with the <code>selected</code> attribute, no value. It IS the value.
                         </li>
                     </ul>
                 </li>
