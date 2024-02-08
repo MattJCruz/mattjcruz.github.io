@@ -32,12 +32,25 @@
         </nav>
         <div class="databox">
             <h2>The Basics</h2>
-            <div class="plainText">Java is a <em>platform-independent</em> programming language. This means you can write a program once and it'll run anywhere (that you can run java)!</div>
+            <div class="plainText">Java is a <em>platform-independent</em> programming language. This means  a Java program written once will run anywhere (that you can run java)!</div>
             <ul>
                 <li>
                     This is thanks to the Java Virtual Machine, or JVM, responsible for executing Java code on a device. 
                 </li>
                 <li>Machine-specific JVM's take the onus of platform dependence off the code itself.
+                </li>
+            </ul>
+
+            The source file is the name for the java file as a whole. It's standard practice to only include one class per source file, as the file is named after the class contained within.
+
+
+        </div>
+        <div class="databox">
+            <h2>The Class &amp; The Object</h2>
+            Java, as an object oriented language, deals heavily with objects.
+            <ul>
+                <li>
+                    An object represents a "module" of a program, containing state and behavior, represented by variables and methods respectively.
                 </li>
             </ul>
             Every java application must have at least one class, and one main method per application.
@@ -49,19 +62,7 @@
                     The main method is the entry point of a Java program.
                 </li>
             </ul>
-            The source file is the name for the java file as a whole. It's standard practice to only include one class per source file, as the file is named after the class contained within.
-
-
-        </div>
-        <div class="databox">
-            <h2>The Class &amp; The Object</h2>
-            Java, as an object oriented language, deals heavily with objects.
-            <ul>
-                <li>
-                An object represents a "module" of a program, containing state and behavior, represented by variables and methods respectively.
-            </li>
-            </ul>
-            
+            Classes are used as blueprints for creating objects.
         </div>
         <div class="databox">
             <h2>Running a Java Program</h2>
@@ -80,26 +81,36 @@
             </ol>
         </div>
         <div>
-            <h4>Anatomy of a Java Program</h4><br>
             This is what goes inside:
             <ul>
-                <h4>Methods</h4>
                 <li>
                     Methods are the programming in computer programming. They contain statements directed toward fulfilling a particular function. They're` reusable packets of code 
                 </li>
-                <h4>Classes</h4>
                 <li>
                     It's standard practice to only include one class per source file, as the file is named after the class contained within. Classes are referenced by file name so having multiple classes oin one source file would be counterproductive.
                 </li>
-                <h4>Statements, Loops, &amp; Branches</h4>
             </ul>
-            In statments such as x=x+3, the expression is evaluated before assignment. 
-            <br><br>
-            Variable names should start with: A-Z, _, or $.
-            <br><br>
-            Anythingafterward can contain a number.
-            <br><br>
-            No reserved words.            
+            <div class="databox">
+                <h2>Variables</h2>
+                Variables in java are strictly typed as primitive or reference.<br><br>
+                Primitive:
+                <ul>
+                    <li>Integer: </li>
+                </ul>
+                Reference variables are those that appear to "hold" objects within them.
+                <br><br>
+                Rules for naming them are as follows:
+                <ul>
+                    <li>
+                        should start with: A-Z, _, or $. 
+                    </li>
+                    <li>
+                        Any character folllwing may be a number.
+                    </li>
+                    <li>No reserved keywords. </li>
+                </ul>
+                In statments such as x=x+3, the expression is evaluated before assignment.
+            </div>
         </div>
     </body>
 </html>
