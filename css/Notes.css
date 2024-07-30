@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Playfair Display";
-    src:url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
-    background-color: #40A2E3;
+    background-color: #40a2e3;
     font-family: "Playfair Display";
 }
 
@@ -18,25 +18,25 @@ margin-left: 5%;
 margin-right: 5%;
 }*/
 
-h1{
-    
-    
+h1 {
     font-size: 50px;
-    
     padding-bottom: 8px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     padding-left: 15px;
     padding-right: 18px;
     width: fit-content;
     margin: auto;
     margin-bottom: 10px;
     text-align: center;
-    border: solid 5px #0D9276;
+    border: solid 5px #0d9276;
     border-radius: 20px;
     font-style: oblique;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: auto;
 }
 
@@ -45,32 +45,28 @@ h3 {
     background-color: transparent;
 }
 
-code, pre,  {
+code,
+pre {
     font-size: 20px;
     color: goldenrod;
     margin-bottom: 20px;
-    margin-top: 0px;
 }
 
 div.databox {
-    background-color: #BBE2EC;
+    background-color: #bbe2ec;
     padding: 20px;
     padding-left: 45px;
-    border: solid 5px #0D9276;
+    border: solid 5px #0d9276;
     border-radius: 20px;
     margin: 20px 5% 20px 5%;
 }
 
 ul.nav {
     /*border: 1px solid black;*/
-    padding: 0px;
     margin: auto;
-    padding: 0;
     width: max-content;
     text-align: center;
 }
-
-
 
 li.nav {
     display: inline-block;
@@ -83,18 +79,17 @@ em {
 
 img {
     border-radius: 12px;
-    border: solid 5px #0D9276;
+    border: solid 5px #0d9276;
 }
 
 blockquote {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg,  rgba(255,200,0,1) 40%,rgba(186,112,79,100) 70%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 200, 0, 1) 40%, rgba(186, 112, 79, 100) 70%);
     text-align: left;
-    margin-left: 0px;
     border-radius: 24px;
 }
 
-.italic{
+.italic {
     font-style: oblique;
 }
 
@@ -110,13 +105,13 @@ ul#playlist {
     border: 1px solid #a9a9a9;
     border-radius: 5px;
     margin-top: 10px;
-    padding: 0px;
     list-style-type: none;
 }
 
 ul#playlist li {
     border-bottom: 1px solid #a9a9a9;
-    padding: 10px;background-image: linear-gradient(#f9f9f9, #e3e3e3);
+    padding: 10px;
+    background-image: linear-gradient(#f9f9f9, #e3e3e3);
 }
 
 ul#playlist li:first-child {
