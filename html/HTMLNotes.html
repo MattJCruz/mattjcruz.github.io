@@ -3,14 +3,13 @@
     <head>
         <title>HTML Notes</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="../css/Notes.css" />
+        <link rel="stylesheet" href="../css/Notes_Stylesheet.css" />
     </head>
     <body>
         <header>
             <h1>HTML Notes</h1>
             <h3>Here I've listed some important HTML facts to remember, divided into sections.</h3>
         </header>
-        <br />
         <nav>
             <ul class="nav">
                 <li class="nav">
@@ -35,7 +34,6 @@
                     depended on. Use CSS for formatting.<br />
                 </li>
             </ul>
-            <br />
             Any HTML document you author should be tightly formatted so everything works as intended. This keeps the
             document up to current specifications (up to spec) as outlined by the World Wide Web Consortium.
             <ul>
@@ -44,9 +42,6 @@
                     work as intended, if at all.
                 </li>
             </ul>
-
-            <br />
-
             When you write an HTML document be sure to tell your browser:
             <ul>
                 <li>
@@ -70,28 +65,27 @@
                 </li>
             </ul>
             Including these important elements will help keep your document up to spec.
+            <ul>
+                <li>
+                    Anything you add to the document needs to go in either the<code>&lt;head&gt;</code> or
+                    <code>&lt;body&gt;</code> element, never directly into the &lt;html&gt; element.
+                </li>
+            </ul>
 
-            <br />
-            <li>
-                Anything you add to the document needs to go in either the<code>&lt;head&gt;</code> or
-                <code>&lt;body&gt;</code> element, never directly into the &lt;html&gt; element.
-            </li>
-            <br />
-            <li>
-                Demarcate meaningful sections of your webpage with the <code>&lt;div&gt;</code> element.
-                <ul>
-                    <li>
-                        <code
-                            >&lt;div&gt;This section is dedicated to a specific topic. Here goes the
-                            content...&lt;/div&gt;</code
-                        >
-                    </li>
-                </ul>
-            </li>
+            Demarcate meaningful sections of your webpage with the <code>&lt;div&gt;</code> element.
+            <ul>
+                <li>
+                    <code
+                        >&lt;div&gt;This section is dedicated to a specific topic. Here goes the
+                        content...&lt;/div&gt;</code
+                    >
+                </li>
+            
             <br />
             <li>
                 When navigating file trees, use ".." to ascend a level in the tree, to navigate to a higher folder and
                 subsequently down to the one you need.
+                
                 <ul>
                     <li>
                         <code>&lt;a href="../HTMLDocuments/otherpage.html"&gt;</code><br />
