@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #40a2e3;
+    background-color: #d5d5d5;
     font-family: "Playfair Display";
 }
 
@@ -24,10 +24,13 @@ nav {
 
 h1 {
     font-size: 50px;
+    font-style: oblique;
     padding-bottom: 8px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: linear-gradient(180deg, gray, 10%, black, 90%, gray);
 }
 
-h1,
 h2,
 h3,
 h4 {
@@ -37,9 +40,8 @@ h4 {
     margin: auto;
     margin-bottom: 10px;
     text-align: center;
-    border: solid 5px #0d9276;
+    border: solid 5px rgb(142, 142, 142);
     border-radius: 20px;
-    font-style: oblique;
     background-color: #ffffff;
     padding: auto;
 }
@@ -60,7 +62,7 @@ div.databox {
     background-color: #bbe2ec;
     padding: 20px;
     padding-left: 45px;
-    border: solid 5px #0d9276;
+    border: solid 5px rgb(142, 142, 142);
     border-radius: 20px;
     margin: 20px 5% 20px 5%;
 }
@@ -87,9 +89,9 @@ img {
 }
 
 blockquote {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(255, 200, 0, 1) 40%, rgba(186, 112, 79, 100) 70%);
+    /*background: linear-gradient(90deg, rgb(255, 200, 0) 40%, rgb(186, 112, 79) 70%);*/
     text-align: left;
+    font-style: oblique;
     border-radius: 24px;
 }
 
