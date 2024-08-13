@@ -6,6 +6,7 @@
 body {
     background-color: #d5d5d5;
     font-family: "Playfair Display";
+    color: #027373;
 }
 
 /*header {
@@ -25,7 +26,7 @@ nav {
 h1 {
     font-size: 50px;
     font-style: oblique;
-    padding-bottom: 8px;
+    /*padding-bottom: 8px;*/
     color: rgb(255, 255, 255);
     text-align: center;
     background-image: linear-gradient(180deg, gray, 10%, black, 90%, gray);
@@ -38,10 +39,9 @@ h4 {
     padding-right: 18px;
     width: fit-content;
     margin: auto;
-    margin-bottom: 10px;
     text-align: center;
-    border: solid 5px rgb(142, 142, 142);
-    border-radius: 20px;
+    border: solid 2px #027373;
+    border-radius: 12px;
     background-color: #ffffff;
     padding: auto;
 }
@@ -54,15 +54,15 @@ h3 {
 code,
 pre {
     font-size: 20px;
-    color: goldenrod;
+    color: black;
     margin-bottom: 20px;
 }
 
 div.databox {
-    background-color: #bbe2ec;
+    background-color: #f9f9f9;
     padding: 20px;
     padding-left: 45px;
-    border: solid 5px rgb(142, 142, 142);
+    border: solid 3px #027373;
     border-radius: 20px;
     margin: 20px 5% 20px 5%;
 }
@@ -73,7 +73,9 @@ ul.nav {
     width: max-content;
     text-align: center;
 }
-
+li {
+    margin: 5px;
+}
 li.nav {
     display: inline-block;
 }

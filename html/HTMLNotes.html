@@ -9,37 +9,38 @@
         <header>
             <h1>HTML</h1>
             <nav>
-            <ul class="nav">
-                <li class="nav">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="nav">
-                    <a href="CSSNotes.html">CSS Notes</a>
-                </li>
-                <li class="nav">
-                    <a href="Javascript.html">Javascript Notes</a>
-                </li>
-            </ul>
-        </nav>
+                <ul class="nav">
+                    <li class="nav">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="nav">
+                        <a href="CSSNotes.html">CSS Notes</a>
+                    </li>
+                    <li class="nav">
+                        <a href="Javascript.html">Javascript Notes</a>
+                    </li>
+                </ul>
+            </nav>
             <!-- <h3>Here I've listed some important HTML facts to remember, divided into sections.</h3> -->
         </header>
-        
+
         <div class="databox">
             <h2>The Basics</h2>
 
             HTML is primarily a markup language, not a formatting language. It's meant to demarcate elements for SEO
-            (search engine optimization) and accessibility. For all intents and purposes it's all function, no form.
+            (search engine optimization) and accessibility. In terms of form vs. function, it's all function and no
+            form.
             <ul>
                 <li>
-                    Browsers may provide formatting, but this can vary from browser to browser and should not be
-                    depended on. Use CSS for formatting.<br />
+                    Browsers may provide formatting, but this varies from browser to browser and should not be depended
+                    on. Use CSS for formatting.<br />
                 </li>
             </ul>
             Any HTML document you author should be tightly formatted so everything works as intended. This keeps the
-            document up to current specifications (up to spec) as outlined by the World Wide Web Consortium.
+            document up to current specifications, or "up to spec", as outlined by the World Wide Web Consortium.
             <ul>
                 <li>
-                    Browsers will pick up the slack if your document is sloppily written but certain features may not
+                    Browsers may pick up the slack if your document is sloppily written but certain features may not
                     work as intended, if at all.
                 </li>
             </ul>
@@ -47,7 +48,7 @@
             <ul>
                 <li>
                     what kind of document it's working with using<code>&lt;!doctype html&gt;</code> at the very top of
-                    the page
+                    the page, outside the <code>&lt;html&gt;</code> tags.
                 </li>
                 <li>
                     what encoding to use for your document with <code>&lt;meta charset="utf-8"&gt;</code> in the
@@ -76,234 +77,198 @@
             Demarcate meaningful sections of your webpage with the <code>&lt;div&gt;</code> element.
             <ul>
                 <li>
-                    <code
-                        >&lt;div&gt;This section is dedicated to a specific topic. Here goes the
-                        content...&lt;/div&gt;</code
-                    >
+                    Use it like this:
+                    <code>
+                        &lt;div&gt;This section is dedicated to a specific topic. Here goes the content...&lt;/div&gt;
+                    </code>
                 </li>
-            
-            <br />
-            <li>
-                When navigating file trees, use ".." to ascend a level in the tree, to navigate to a higher folder and
-                subsequently down to the one you need.
-                
-                <ul>
-                    <li>
-                        <code>&lt;a href="../HTMLDocuments/otherpage.html"&gt;</code><br />
-                        This traverses out of the current folder to the superfolder and down into the HTMLDocuments
-                        folder for the desired html sheet.
-                    </li>
-                </ul>
-            </li>
-            <br />
-            <li>
-                Consistency is key. It's best practice to use lowercase for <em>all</em> of your classes and id's. No
-                spaces.
-                <ul>
-                    <li>
-                        This will make referencing them later easier on you if you don't have to remember whether or not
-                        this specific id is all lowercase or that specific one is PascalCase.
-                    </li>
-                </ul>
-            </li>
-            <br />
-            <li>
-                Use the <a href="https://validator.w3.org/">W3C Validator</a> to ensure your document is up to spec
-                (specification) as defined by HTML5.
-            </li>
-            <br />
-        </div>
-        <div class="databox">
-            <h2>Linking</h2>
-            <ul>
+
                 <li>
-                    The <code>&lt;href&gt;</code> (hypertext reference) attribute is used to link external items called
-                    for when using an element that requires it. <br />
-                    To link to another html document, i.e. webpage, use the <code>&lt;a&gt;</code> (anchor) element with
-                    the <code>href</code> attribute with the destination url.
+                    When navigating file trees, keep in mind this occurs with reference to the document you're currently
+                    viewing. Use ".." to ascend a level in the tree, i.e. to navigate to a higher folder and
+                    subsequently down to the one you need using <code>&sol;</code>.<br />
+                    <br />
+
+                    <code>&lt;a href="../HTMLDocuments/otherpage.html"&gt;</code><br /><br />
+
+                    This traverses out of the current folder to the superfolder and down into the HTMLDocuments folder
+                    for the desired html sheet.
+                </li>
+                <li>
+                    Consistency is key. It's best practice to use lowercase for <em>all</em> of your classes and id's.
+                    No spaces.
                     <ul>
                         <li>
-                            <code>&lt;a href="otherPage.html&gt;</code>
-                        </li>
-                        <li>
-                            The text between the anchor tags will be highlighted as a link, like the link to the W3C
-                            Validator above.
-                        </li>
-                        <li>Use the <code>target="_blank"</code> attribute to open your link in a new tab.</li>
-                    </ul>
-                </li>
-                <br />
-                <li>
-                    <code>&lt;img&gt;</code> elements require a link to the desired image, done with the
-                    <code>src</code> attribute.
-                    <ul>
-                        <li>
-                            <code>&lt;img src="Img.png"&gt;</code>
+                            This will make referencing them later easier on you if you don't have to remember whether or
+                            not this specific id is all lowercase or that specific one is PascalCase.
                         </li>
                     </ul>
                 </li>
-                <br />
                 <li>
-                    Use an <code>&lt;id&gt;</code> to navigate to a certain part of the page with href.
-                    <ul>
-                        <li>
-                            <code>id="idname"</code>
-                        </li>
-                        <li>
-                            <code>&lt;a href="#idname"&gt;</code>Click here to go to the idname section!<code
-                                >&lt;/a&gt;</code
-                            >
-                        </li>
-                        <li>
-                            Your ID must be unique to the element you're identifying. Otherwise you'll be trying
-                            navigating to two sections at once!
-                        </li>
-                    </ul>
-                </li>
-                <br />
-                <li>
-                    Use the <code>&lt;nav&gt;</code> element to create a menu bar listing other pages on your website.
-                    <ul>
-                        <li>
-                            Use an unordered list formatted to display as an inline block, rather than a line-broken
-                            vertical list, to create a menu bar.
-                        </li>
-                        <pre>
-&lt;nav&gt;
-    &lt;ul class="nav"&gt;
-        &lt;li class="nav"&gt;
-            &lt;a href="index.html">Home&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="nav"&gt;
-            &lt;a href="CSSNotes.html">CSS Notes&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class="nav"&gt;
-            &lt;a href="Javascript.html">Javascript Notes&lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
-                        </pre>
-                    </ul>
+                    Use the <a href="https://validator.w3.org/">W3C Validator</a> to ensure your document is up to spec
+                    (specification) as defined by HTML5.
                 </li>
             </ul>
         </div>
         <div class="databox">
-            <h2>Images and Formatting</h2>
+            <h2>Linking</h2>
+
+            The <code>&lt;a&gt;</code> (anchor) element is used to link external items called for when using an element
+            that requires it. Use the <code>&lt;href&gt;</code>(hypertext reference) attribute to link to the
+            destination url.
             <ul>
                 <li>
-                    Using JPEGs to reduce the size of a photo can make it more economical for a user's computer to
-                    display on your webpage.
+                    <code>&lt;a href="otherPage.html"&gt;</code>
                 </li>
-                <br />
+                <li>
+                    The text between the anchor tags will be highlighted as a link, like the link to the W3C Validator
+                    above.
+                </li>
+                <li>Use the <code>target="_blank"</code> attribute to open your link in a new tab.</li>
+            </ul>
+
+            <code>&lt;img&gt;</code> elements require a link to the desired image, done with the
+            <code>src</code> attribute.
+            <ul>
+                <li>
+                    <code>&lt;img src="Img.png"&gt;</code>
+                </li>
+            </ul>
+
+            Use an <code>&lt;id&gt;</code> to navigate to a certain part of the page with href.
+            <ul>
+                <li>
+                    <code>id="idname"</code>
+                </li>
+                <li>
+                    <code>&lt;a href="#idname"&gt;</code>Click here to go to the idname section!<code>&lt;/a&gt;</code>
+                </li>
+                <li>
+                    Your ID must be unique to the element you're identifying. Otherwise you'll be trying navigating to
+                    two sections at once!
+                </li>
+            </ul>
+
+            Use the <code>&lt;nav&gt;</code> element to create a menu bar listing other pages on your website.
+            <ul>
+                <li>
+                    Use an unordered list formatted to display as an inline block, rather than a line-broken vertical
+                    list, to create a menu bar.
+                </li>
+            </ul>
+            <pre>
+&lt;nav&gt;
+    &lt;ul class="nav"&gt;
+        &lt;li class="nav"&gt;
+            &lt;a href="index.html"&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav"&gt;
+            &lt;a href="CSSNotes.html"&gt;CSS Notes&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav"&gt;
+            &lt;a href="Javascript.html"&gt;Javascript Notes&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+                        </pre
+            >
+        </div>
+        <div class="databox">
+            <h2>Images and Formatting</h2>
+
+            Using JPEGs to reduce the size of a photo can make it more economical for a user's computer to display on
+            your webpage.
+            <ul>
                 <li>
                     Setting the width and height of your images beforehand in an image editor will provide your users
                     with a more optimized version of your webpage.
-                    <ul>
-                        <li>Remember to save the resized version as a copy of the original; do not overwrite it.</li>
-                    </ul>
                 </li>
-                <br />
+                <li>Remember to save the resized version as a copy of the original; do not overwrite it.</li>
+            </ul>
+            Incorporate alt attributes into all of your photos in case, e.g., your user is using a screen reader or the
+            image fails to load.
+            <ul>
+                <li>This, also, is in the interest of keeping your document up to spec.</li>
+            </ul>
+            Style an element with a CSS sheet by giving it a class attribute with a distinct name value in quotes.
+            <ul>
                 <li>
-                    Incorporate alt attributes in all of your photos in case, e.g., your user is using a screen reader
-                    or the image fails to load.
-                    <ul>
-                        <li>This, also, is in the interest of keeping your document up to spec.</li>
-                    </ul>
-                </li>
-                <br />
-                <li>
-                    Style an element with a CSS sheet by giving it a class attribute with a distinct name value in
-                    quotes.<br />
-                    For example:
-                    <br />
-                    <ul>
-                        <li>
-                            <code> class="yellow" </code>
-                        </li>
-                    </ul>
+                    <code> class="yellow" </code>
                 </li>
             </ul>
         </div>
         <div class="databox">
             <h2>Interacting With the User</h2>
+
+            Forms are used to collect data from your user via the <code>&lt;form&gt;</code> element
             <ul>
                 <li>
-                    Forms are used to collect data from your user via the <code>&lt;form&gt;</code> element
+                    The <code>action</code> attribute specifies the url to which the form should be submitted.
+                    <ul>
+                        <li><code>&lt;form action="/submit-url"&gt;</code>Form content <code>&lt;form&gt;</code></li>
+                    </ul>
+                </li>
+            </ul>
+            The user inputs data with the <code>&lt;input&gt;</code> element.
+            <ul>
+                <li>
+                    The <code>type</code> attribute is used to set the type of input to text fields, checkboxes, and
+                    file selectors.
+                    <ul>
+                        <li><code>&lt;input type="text"&gt;</code><input type="text" /></li>
+                        <li><code>&lt;input type="radio"&gt;</code><input type="radio" /></li>
+                        <li><code>&lt;input type="checkbox"&gt;</code><input type="checkbox" /></li>
+                    </ul>
+                    Use the <code>&lt;br&gt;</code> element to create line breaks between inputs, since they're
+                    <em>inline</em> elements.<br />
+                    Add an <code>id</code> to link it with a label.
+                </li>
+            </ul>
+            Label a form with the <code>&lt;label&gt;</code> element. Add a <code>for</code> attribute to link it to its
+            respective input field <code>id</code>. This increases the hit area for checkboxes to include their label,
+            so clicking the label will activate the checkbox. Your input field can be nested inside the label or added
+            alongside. Nesting negates the need for a <code>for</code> attribute.
+            <ul>
+                <li>
+                    Use the <code>name</code> attribute to label the input/data entered in the field. Date fields with
+                    no name attribute are not sent.
+                </li>
+                <li>
+                    Add placeholder text that tells the user what to enter in a text field with the
+                    <code>placeholder</code> attribute.
+                </li>
+                <li>
+                    Make sure your user fills out required fields with the valueless
+                    <code>required</code> attribute.
+                </li>
+                <li>
+                    By default, a <code>&lt;button&gt;</code> sans attributes in a form will submit your form to the
+                    <code>action</code> url and furthermore the database (to be expounded upon later...) We want this
+                    behavior to be explicit by setting the <code>type</code> attribute to <code>submit</code>.
+                </li>
+                <li>
+                    Give your data a <code>name</code> attribute to store it in the database that holds your user's
+                    data.
+                </li>
+                <li>
+                    Make checkbox choices mutually exclusive by only allowing them to select data under one name, i.e.
+                    only one
+                </li>
+                <li>
+                    Use the <code>value</code> attribute to label your data further, as in the case where you have
+                    discrete specific options for a field.
+                </li>
+                <li>
+                    <code>fieldset</code> groups related fields.
                     <ul>
                         <li>
-                            The <code>action</code> attribute specifies the url to which the form should be submitted.
-                            <ul>
-                                <li>
-                                    <code>&lt;form action="/submit-url"&gt;</code>Form content <code>&lt;form&gt;</code>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>The user inputs data with the <code>&lt;input&gt;</code> element.</li>
-                        <li>
-                            The <code>type</code> attribute is used to set the type of input to text fields, checkboxes,
-                            and file selectors.
-                            <ul>
-                                <li><code>&lt;input type="text"&gt;</code><input type="text" /></li>
-                                <li><code>&lt;input type="radio"&gt;</code><input type="radio" /></li>
-                                <li><code>&lt;input type="checkbox"&gt;</code><input type="checkbox" /></li>
-                            </ul>
-                            Use the <code>&lt;br&gt;</code> element to create line breaks between inputs, since they're
-                            <em>inline</em> elements.<br />
-                            Add an <code>id</code> to link it with a label.
-                        </li>
-                        <li>
-                            Label a form with the <code>&lt;label&gt;</code> element. Add a <code>for</code> attribute
-                            to link it to its respective input field <code>id</code>. This increases the hit area for
-                            checkboxes to include their label, so clicking the label will activate the checkbox. Your
-                            input field can be nested inside the label or added alongside. Nesting negates the need for
-                            a <code>for</code> attribute.
-                        </li>
-                        <li>
-                            Use the <code>name</code> attribute to label the input/data entered in the field. Date
-                            fields with no name attribute are not sent.
-                        </li>
-                        <li>
-                            Add placeholder text that tells the user what to enter in a text field with the
-                            <code>placeholder</code> attribute.
-                        </li>
-                        <li>
-                            Make sure your user fills out required fields with the valueless
-                            <code>required</code> attribute.
-                        </li>
-                        <li>
-                            By default, a <code>&lt;button&gt;</code> sans attributes in a form will submit your form to
-                            the <code>action</code> url and furthermore the database (to be expounded upon later...) We
-                            want this behavior to be explicit by setting the <code>type</code> attribute to
-                            <code>submit</code>.
-                        </li>
-                        <li>
-                            Give your data a <code>name</code> attribute to store it in the database that holds your
-                            user's data.
-                        </li>
-                        <li>
-                            Make checkbox choices mutually exclusive by only allowing them to select data under one
-                            name, i.e. only one
-                        </li>
-                        <li>
-                            Use the <code>value</code> attribute to label your data further, as in the case where you
-                            have discrete specific options for a field.
-                        </li>
-                        <li>
-                            <code>fieldset</code> groups related fields.
-                            <ul>
-                                <li>
-                                    The <code>&lt;legend&gt;</code> element provides a caption hinting at what to enter
-                                    or select in your fieldset.
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Use radio buttons for inputs with one answer and checkboxes for multiple-answer inputs.</li>
-                        <li>
-                            Make a selection default with the <code>selected</code> attribute, no value. It IS the
-                            value.
+                            The <code>&lt;legend&gt;</code> element provides a caption hinting at what to enter or
+                            select in your fieldset.
                         </li>
                     </ul>
                 </li>
+                <li>Use radio buttons for inputs with one answer and checkboxes for multiple-answer inputs.</li>
+                <li>Make a selection default with the <code>selected</code> attribute, no value. It IS the value.</li>
             </ul>
         </div>
     </body>
