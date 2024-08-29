@@ -29,7 +29,7 @@ h1 {
     /*padding-bottom: 8px;*/
     color: rgb(255, 255, 255);
     text-align: center;
-    background-image: linear-gradient(180deg, gray, 10%, black, 90%, gray);
+    background-image: linear-gradient(180deg, #7ef2ea, 5%, #027373, 85%, #366b67);
 }
 
 h2,

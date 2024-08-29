@@ -1,0 +1,7 @@
+Aug 19th
+One thing I've come to learn abotu myself throught my self-taught journey is that I'm a very first-principles-oriented learner. As such, 
+
+The Github docs go into great detail explaining the shortcomings of previous version management systems
+that necessitated the design of git as it is. I just wish I could find such an explanation for OOP in general.
+Learning so deeply about Java using O'Reilly's Head-First Java is of course highly informative,
+but I'm missing a lot of "why's" associated with the many advancements and features of the language.
