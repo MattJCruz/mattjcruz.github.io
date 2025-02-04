@@ -1,12 +1,12 @@
-@font-face {
+/*@font-face {
     font-family: "Playfair Display";
     src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
-}
+}*/
 
 body {
-    background-color: #d5d5d5;
-    font-family: "Playfair Display";
-    color: #027373;
+    background-color: #6b6b6b;
+    /*font-family: "Playfair Display";*/
+    color: #265151;
 }
 
 /*header {
@@ -59,7 +59,7 @@ pre {
 }
 
 div.databox {
-    background-color: #f9f9f9;
+    background-color: #8c8c8c;
     padding: 20px;
     padding-left: 45px;
     border: solid 3px #027373;
