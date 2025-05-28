@@ -4,9 +4,10 @@
 }
 
 body {
-    background-color: #6b6b6b;
+    /*background-color: #f0ecbd; */
+    background-color: #a2acca;
     font-family: "Playfair Display";
-    color: #265151;
+    color: #412722;
 }
 
 /*header {
@@ -21,13 +22,15 @@ margin-right: 5%;
 
 nav {
     display: inline;
+    background-color: #002d60;
+    /*color: #2176ff; */
 }
 
 h1 {
     font-size: 50px;
     font-style: oblique;
     /*padding-bottom: 8px;*/
-    color: rgb(255, 255, 255);
+    color: #412722;
     text-align: center;
     /*background-image: linear-gradient(180deg, #7ef2ea, 5%, #027373, 85%, #366b67);*/
 }
@@ -35,14 +38,14 @@ h1 {
 h2,
 h3,
 h4 {
-    padding-left: 15px;
+    padding-left: 18px;
     padding-right: 18px;
     width: fit-content;
     margin: auto;
     text-align: center;
-    border: solid 2px #027373;
-    border-radius: 12px;
-    background-color: #ffffff;
+    border: solid 2px #3e442b;
+    border-radius: 8px;
+    background-color: #ccd8b7;
     padding: auto;
 }
 
@@ -59,11 +62,12 @@ pre {
 }
 
 div.databox {
-    background-color: #8c8c8c;
+    /*background-color: #8dab7f;*/
+    background-color: #b6c7d4;
     padding: 20px;
     padding-left: 45px;
-    border: solid 3px #027373;
-    border-radius: 20px;
+    border: solid 3px #394032;
+    border-radius: 9px;
     margin: 20px 5% 20px 5%;
 }
 

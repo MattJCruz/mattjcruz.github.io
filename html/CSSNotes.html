@@ -25,30 +25,23 @@
         <!-- <h3>My notes on CSS usage.</h3> -->
         <br />
 
-        <div class="databox">
-            <h2>Design Fundamentals</h2>
-            <ul>
-                <li>
-                    Choose a dominant color for a website and use its complement for drawing attention certain elements,
-                    much as I've done with my pale orange background and pale blue headings. (This is hilariously out of
-                    date, please disregard the colors.)
-                </li>
-            </ul>
-        </div>
-        <div class="databox">
+        <div class="databox" id="The_Basics">
             <h2>The Basics</h2>
+            <p>
+                To include CSS in your HTML document via a stylesheet, use a <code>&lt;link&gt;</code> element with an
+                href attribute pointing to your stylesheet.
+            </p>
             <ul>
                 <li>
-                    To include CSS in your HTML document via a stylesheet, use a <code>&lt;link&gt;</code> element with
-                    an href attribute pointing to your stylesheet.<br />
+                    <br />
                     For example:
                     <ul>
                         <li>
                             <code>&lt;link rel="stylesheet" href="filename or URL"&gt;</code>
                         </li>
                     </ul>
-                    You can include CSS directly in your page, inline, i.e. per element, using the <code>&lt;style&gt;</code> tag. Not useful for
-                    applying style to multiple sheets.
+                    You can include CSS directly in your page, inline, i.e. per element, using the
+                    <code>&lt;style&gt;</code> tag. Not useful for applying style to multiple sheets.
                 </li>
                 <li>
                     A CSS selector and the properties defined between its curly brackets is called, altogether, a
@@ -152,7 +145,7 @@ Use a <code>&lt;span&gt;</code> element to mark inline text for styling with CSS
                 </li>
             </ul>
         </div>
-        <div class="databox">
+        <div class="databox" id="Text_&_Fonts">
             <h2>Text & Fonts</h2>
             <ul>
                 <li>
@@ -198,7 +191,7 @@ Use a <code>&lt;span&gt;</code> element to mark inline text for styling with CSS
                 </li>
             </ul>
         </div>
-        <div class="databox">
+        <div class="databox" id="The_Box_Model">
             <h2>The Box Model</h2>
             <ul>
                 <li>
@@ -307,12 +300,12 @@ Use a <code>&lt;span&gt;</code> element to mark inline text for styling with CSS
                 </li>
             </ul>
         </div>
-        <div class="databox">
+        <div class="databox" id="Layout">
             <h2>Layout</h2>
             <ul>
                 <li>
-                    An HTML document displays content according to Flow. Elements of a page are displayed how they're
-                    typed up in the document, from top to bottom, end to end.
+                    An HTML document displays content according to Flow. Elements of a page are displayed how as they're
+                    typed in the document, from top to bottom, end to end.
                 </li>
                 <li>
                     Flow applies to inline elements as well, following the flow of the text, i.e. left to right, top to
@@ -327,6 +320,16 @@ Use a <code>&lt;span&gt;</code> element to mark inline text for styling with CSS
                     The element is floated above (quite literally on top of) the proceeding elements to its desired
                     location. Subsequently, the inline elements (remember, text is considered an inline element) are
                     arranged around the floated element.
+                </li>
+            </ul>
+        </div>
+        <div class="databox" id="Design_Fundamentals">
+            <h2>Design Fundamentals</h2>
+            <ul>
+                <li>
+                    Choose a dominant color for a website and use its complement for drawing attention certain elements,
+                    much as I've done with my pale orange background and pale blue headings. (This is hilariously out of
+                    date, please disregard the colors.)
                 </li>
             </ul>
         </div>
