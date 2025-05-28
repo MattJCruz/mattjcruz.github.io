@@ -10,6 +10,7 @@
         <header>
             <h1>Javascript Notes</h1>
             <h3>The interactive aspect of web pages.</h3>
+            Using Head First HTML5 Programming Book, <i>year &amp; author(s)</i>
         </header>
         <br />
         <nav>
@@ -42,17 +43,22 @@
                 </li>
                 <li>
                     There was no standardized syntax for the language at the time. To remedy this, Javascript 1.1 was
-                    submitted to the European Computer Manufacturers Association (ECMA) in 1997. The committee appointed
-                    to the task of standardizing Javascript made it vendor-neutral, general-purpose, and cross-platform,
-                    thusly dubbed "ECMAscript", the raw standardized version of Javascript.
+                    submitted to the European Computer Manufacturers Association (ECMA) in 1997. The committee that was
+                    appointed to the task of standardizing Javascript made it vendor-neutral, general-purpose, and
+                    cross-platform, thusly dubbed "ECMAscript", the raw standardized version of Javascript.
+                </li>
+                <li>
+                    To further address the shortcomings of the language, a "syntactic superset" of javascript called
+                    "typescript" was developed.
                 </li>
             </ul>
         </div>
         <div class="databox" id="basic">
             <h2>The Basics</h2>
-            Javascript is, at the end of the day, a programming language. Many of its properties are shared with many
-            other languages, and as such those facts will be excluded, i.e. variables, booleans, if statements etc., due
-            to the fact I'm already intimately acquainted with them at this point.
+            Javascript is, at the end of the day, a programming language (or a scripting language depending on who you
+            ask). Many of its properties are shared with many other languages, and as such those facts will be excluded.
+            This includes variables, booleans, and if statements, due to the fact I'm already intimately acquainted with
+            them at this point.
             <ul>
                 <li>
                     Use the
@@ -148,44 +154,48 @@
                 <li>
                     Gain access to a specific element according to its ID using the
                     <code>&lt;getElementById&gt;</code> function:
+
+                    <code>document.getElementById("idname");</code>
                 </li>
-                <code>document.getElementById("idname");</code>
                 <li>
                     The document is accessed at the "root(s)" of the tree and the specified ID is selected. Now we'll
                     use this function to manipulate the content of the element with the specified ID using the
                     <code>innerHTML</code> property.
+
+                    <pre>
+                    var text = document.getElementById("idname");
+                    text.innerHTML = "New text Added!";
+                    </pre>
                 </li>
-                <pre>
-var text = document.getElementById("idname");
-text.innerHTML = "New text Added!";
-                </pre>
                 <li>
                     Remember to tell the page to execute Javascript code AFTER the document-object-model is fully
                     created. Javascript is read and executed as soon as the <code>&lt;script&gt;</code> tag is added to
                     the DOM, whether by linked JS file or verbatim code. This means it will be referencing objects that
                     haven't been created yet.
-                </li>
-                <pre>
+
+                    <pre>
 function init(){
         /*Insert your code and variables go here*/                
                }
 window.onload = init;
-                </pre>
-                Alternatively, the
-                <code>&lt;script&gt;</code>
-                tag can be placed after all loadable elements, speeding up runtime* and allowing the DOM to fully load
-                prior to loading your Javascript.<br /><br />
-                <li>Create a new HTML element using the createElement function.<br /><br /></li>
-                <code>var li = document.createElement("li");</code
-                ><br />
-                This function creates an element of a type specified in the parameters and returns (a reference to) the
-                element. In this statement the reference is stored in a variable called
-                <code>li</code
-                >.
-                <br /><br />*This information has not been independently verified at time of writing.
+                </pre
+                    >
+                    Alternatively, the
+                    <code>&lt;script&gt;</code>
+                    tag can be placed after all loadable elements, speeding up runtime* and allowing the DOM to fully
+                    load prior to loading your Javascript.<br /><br />
+                </li>
+                <li>
+                    Create a new HTML element using the createElement function.<br /><br />
+                    <code>var li = document.createElement("li");</code><br />
+                    This function creates an element of a type specified in the parameters and returns (a reference to)
+                    the element. In this statement the reference is stored in a variable called
+                    <code>li</code>.
+                </li>
             </ul>
+            <br /><br />*This information has not been independently verified at time of writing.
         </div>
-        <div class="databox" id="objprops">
+        <div class="databox" id="varsAndFuncs">
             <h2>Variables, Functions, Objects, &amp; Properties</h2>
             <h3>Variables</h3>
             <ul>
@@ -206,55 +216,61 @@ window.onload = init;
                     In cases where functions share the same name, by accident or otherwise, the last incidence of a
                     named function will be used.
                 </li>
-                <li>Functions can be used as values.</li>
-                <code>window.onload="init"</code
-                ><br /><br />
-                Here the init function, our onload handler used to execute code once the DOM is fully loaded, is set as
-                the value of the onload property of the window object. I had assumed it was being called, but when i
-                added parentheses to my init it seemed to be called as soon as the page was loaded, no matter what. This
-                seems to be a workaround to it.<br />
-                <li>Additionally, functions can be called anonymously.</li>
-                <code
-                    >var f = function(num) { return num + 1; }<br />
-                    var result = f(1);</code
-                ><br /><br />
-                This all suggests more that
-                <em>functions ARE values.</em>
-                With this in mind, we can further compact our handler into one line of code for readability.
-                <br />
-                <code
-                    >window.onload = function() {<br />
-                    alert("you rule!"); }</code
-                >
+                <li>
+                    Functions can be used as values.
+                    <code>window.onload="init"</code>
+                    <br /><br />
+
+                    Here the init function, our onload handler used to execute code once the DOM is fully loaded, is set
+                    as the value of the onload property of the window object. I had assumed it was being called, but
+                    when i added parentheses to my init it seemed to be called as soon as the page was loaded, no matter
+                    what. This seems to be a workaround to it.<br />
+                </li>
+                <li>
+                    Additionally, functions can be called anonymously.
+                    <code
+                        >var f = function(num) { return num + 1; }<br />
+                        var result = f(1);</code
+                    ><br /><br />
+                    This all suggests more that
+                    <em>functions ARE values.</em>
+                    With this in mind, we can further compact our handler into one line of code for readability.
+                    <br />
+                    <code
+                        >window.onload = function() {<br />
+                        alert("you rule!"); }</code
+                    >
+                </li>
             </ul>
             <h3>Objects</h3>
             <ul>
                 <li>An object is, essentially, a collection of properties, AKA: variables!</li>
-                <li>Create an object by setting the value of a variable to a set of parentheses.</li>
-                <code>
-                    var objectExample = {<br />
-                    firstVar: "String",<br />
-                    varTwo: 32,<br />
-                    var3rd: ["firstElement", "2ndElement"]
-                    <br />} </code
-                ><br /><br />
-                Then list each variable (property) you'd like, ending each declaration with a comma rather than a
-                semicolon.<br /><br />
+                <li>
+                    Create an object by setting the value of a variable to a set of parentheses.
+                    <code>
+                        var objectExample = {<br />
+                        firstVar: "String",<br />
+                        varTwo: 32,<br />
+                        var3rd: ["firstElement", "2ndElement"]
+                        <br />} </code
+                    ><br /><br />
+                    Then list each variable (property) you'd like, ending each declaration with a comma rather than a
+                    semicolon.<br /><br />
+                </li>
                 <li>
                     You can access a property from an object in different ways.<br /><br />
 
                     Via <em>dot notation</em>:
+
+                    <code> objectExample.var3rd[1] = "12"; </code><br /><br />
+                    Via
+                    <em>string notation</em>:<br /><br />
+                    <code>var b</code>
+                    <br />
+                    As it stands, this flies in the face of OOP principles, where classes are Just objects themselves.
+                    This is in direct opposition to java, where objects are built from classes, and thus reusable. Here
+                    in javascript the object is synonymous with its "class" declaration.
                 </li>
-                <code> objectExample.var3rd[1] = "12"; </code
-                ><br /><br />
-                Via
-                <em>string notation</em
-                >:<br /><br />
-                <code>var b</code>
-                <br />
-                As it stands, this flies in the face of OOP principles, where classes are Just objects themselves. This
-                is in direct opposition to java, where objects are built from classes, and thus reusable. Here in
-                javascript the object is synonymous with its "class" declaration.
             </ul>
 
             133
