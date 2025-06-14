@@ -5,7 +5,7 @@
 
 body {
     /*background-color: #f0ecbd; */
-    background-color: #a2acca;
+    background-color: #fb921a;
     font-family: "Playfair Display";
     color: #412722;
 }
@@ -21,8 +21,10 @@ margin-right: 5%;
 }*/
 
 nav {
-    display: inline;
     background-color: #2176ff;
+    display: inline-block;
+    text-align: center;
+    /*I'm nearly certain the book recommended display:inline; as the preferred method for "flattening" the nav bar. But doing so negated my background color. Not sure what that's about. I do hope I'll relearn more about inline and block elements when I get to those portions of the book.*/
     /*color:  #002d60*/
 }
 
@@ -31,7 +33,7 @@ h1 {
     font-style: oblique;
     color: #412722;
     text-align: center;
-    background-color: #2176ff;
+    /*background-color: #2176ff;*/
     /*background-image: linear-gradient(180deg, #7ef2ea, 5%, #027373, 85%, #366b67); */
     /*padding-bottom: 8px;*/
 }
@@ -46,7 +48,7 @@ h4 {
     text-align: center;
     border: solid 2px #3e442b;
     border-radius: 8px;
-    background-color: #ccd8b7;
+    background-color: #faa300;
     padding: auto;
 }
 
@@ -64,14 +66,14 @@ pre {
 
 div.databox {
     /*background-color: #8dab7f;*/
-    background-color: #b6c7d4;
+    background-color: #f3b700;
     padding: 20px;
     padding-left: 45px;
-    border: solid 3px #394032;
+    border: solid 3px #f63e02;
     border-radius: 9px;
     margin: 20px 5% 20px 5%;
     /*float: left;*/
-    width: auto;    
+    width: auto;
 }
 
 ul.nav {
@@ -94,7 +96,7 @@ em {
 
 img {
     border-radius: 12px;
-    border: solid 5px #0d9276;
+    border: solid 5px #f63e02;
 }
 
 blockquote {
