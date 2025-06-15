@@ -10,18 +10,17 @@ body {
     color: #412722;
 }
 
-/*header {
-background-color: #CEE6F3;
-text-align: center;
-padding: 12px;
-border: solid 5px #c45525;
-border-radius: 20px;
-margin-left: 5%;
-margin-right: 5%;
-}*/
+header {
+    background-color: #f9d051;
+    text-align: center;
+    border: solid 2px #3e442b;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 nav {
-    background-color: #2176ff;
+    /*background-color: #2176ff;*/
     display: inline-block;
     text-align: center;
     /*I'm nearly certain the book recommended display:inline; as the preferred method for "flattening" the nav bar. But doing so negated my background color. Not sure what that's about. I do hope I'll relearn more about inline and block elements when I get to those portions of the book.*/
@@ -46,10 +45,11 @@ h4 {
     width: fit-content;
     margin: auto;
     text-align: center;
-    border: solid 2px #3e442b;
-    border-radius: 8px;
-    background-color: #faa300;
     padding: auto;
+    /*border: solid 2px #3e442b;
+    border-radius: 8px;
+    background-color: #faa300;*/
+    
 }
 
 h3 {
@@ -66,10 +66,10 @@ pre {
 
 div.databox {
     /*background-color: #8dab7f;*/
-    background-color: #f3b700;
+    background-color: #f9d051;
     padding: 20px;
     padding-left: 45px;
-    border: solid 3px #f63e02;
+    border: solid 2px #3e442b;
     border-radius: 9px;
     margin: 20px 5% 20px 5%;
     /*float: left;*/
